@@ -1,0 +1,1954 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/womo#"
+     xml:base="https://w3id.org/womo"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:womo="https://w3id.org/womo#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/womo#">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-19</terms:created>
+        <terms:creator rdf:nodeID="genid1"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license>CC-BY-40</terms:license>
+        <terms:title>The Occupant-centric Workplace Management ontology (WOMO) </terms:title>
+        <vann:preferredNamespacePrefix>womo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/womo#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">The Occupant-centric Workplace Management (WOMO) ontology describes knowledge related to office environments and enables the development of a workplace Digital Twin system centred on the occupant experience.</rdfs:comment>
+        <rdfs:label>The Occupant-centric Workplace Management ontology (WOMO) </rdfs:label>
+        <owl:versionIRI>https://w3id.org/womo#</owl:versionIRI>
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
+        <schema:email rdf:resource="mailto:alessandro.bruttini@unifi.it"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0001-6317-2406"/>
+        <schema:memberOf rdf:nodeID="genid2"/>
+        <schema:name>Alessandro Bruttini</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <schema:identifier rdf:resource="https://www.linkedin.com/in/alessandro-bruttini-2228883b/"/>
+        <schema:name>University of Florence, IT</schema:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- https://schema.org/email -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/email"/>
+    
+
+
+    <!-- https://schema.org/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/identifier"/>
+    
+
+
+    <!-- https://schema.org/memberOf -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/memberOf"/>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/bot#containsElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bot#containsElement"/>
+    
+
+
+    <!-- https://w3id.org/bot#hasSpace -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bot#hasSpace"/>
+    
+
+
+    <!-- https://w3id.org/bot#hasSubElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bot#hasSubElement"/>
+    
+
+
+    <!-- https://w3id.org/womo#containsWorkspaceElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#containsWorkspaceElement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bot#containsElement"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#WorkspaceElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasActivity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasActivity">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isPerformedAt"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasActivityCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasActivityCategory">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isActivityCategoryOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#ActivityCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasActivityType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasActivityType">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isActivityTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#ActivityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasAllocatedWorkspace -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasAllocatedWorkspace">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isAllocatedTo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Worker"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasConditionType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasConditionType">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Condition"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#ConditionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasFeedback -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasFeedback">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasFeedbackGenerationType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasFeedbackGenerationType">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#FeedbackGenerationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasFeedbackResponseType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasFeedbackResponseType">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isFeedbackResponseTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#FeedbackResponseType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasHealthIndicatorType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasHealthIndicatorType">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isHealthIndicatorTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#HealthIndicator"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#HealthIndicatorType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasMechanicalVentilationControlType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasMechanicalVentilationControlType">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#MechanicalVentilationControlType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasMember -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasMember">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isMemberOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Member"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasNaturalVentilationControlType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasNaturalVentilationControlType">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isNaturalVentilationControlTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#NaturalVentilationControlType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasPart">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isPartOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasRatingScale -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasRatingScale">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isRatingScaleOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/womo#Condition"/>
+                    <rdf:Description rdf:about="https://w3id.org/womo#Preference"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/womo#RatingScale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasSocialInteraction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasSocialInteraction">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isSocialInteractionOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#SocialInteraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasSubWorkspaceElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasSubWorkspaceElement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bot#hasSubElement"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#WorkspaceElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#WorkspaceElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasVentilationType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasVentilationType">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#VentilationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasWorkerFeature -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasWorkerFeature">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Worker"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#WorkerFeature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasWorkspace -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasWorkspace">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bot#hasSpace"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#hasWorkspaceType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#hasWorkspaceType">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#WorkspaceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isActivityCategoryOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isActivityCategoryOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#ActivityCategory"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isActivityTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isActivityTypeOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#ActivityType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isActivityTypeSupportedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isActivityTypeSupportedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#ActivityType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isAllocatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isAllocatedTo">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Worker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isConditionTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isConditionTypeOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#hasConditionType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#ConditionType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isFeedbackGenerationTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isFeedbackGenerationTypeOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#hasFeedbackGenerationType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#FeedbackGenerationType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isFeedbackResponseTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isFeedbackResponseTypeOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#FeedbackResponseType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isHealthIndicatorTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isHealthIndicatorTypeOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#HealthIndicatorType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#HealthIndicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isMechanicalVentilationControlTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isMechanicalVentilationControlTypeOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#hasMechanicalVentilationControlType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#MechanicalVentilationControlType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isMemberOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isMemberOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Member"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isNaturalVentilationControlTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isNaturalVentilationControlTypeOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#NaturalVentilationControlType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isPartOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isPerformedAt -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isPerformedAt">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isPerformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isPerformedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Worker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isPreferenceFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isPreferenceFor">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isPreferredAs"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Preference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isPreferredAs -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isPreferredAs">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Preference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isProvidedAt -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isProvidedAt">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#hasFeedback"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isProvidedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isProvidedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#provides"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Worker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isRatingScaleOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isRatingScaleOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#RatingScale"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/womo#Condition"/>
+                    <rdf:Description rdf:about="https://w3id.org/womo#Preference"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isRelatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isRelatedTo">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isReportedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isReportedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/womo#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/womo#WorkerFeature"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isSocialInteractionOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isSocialInteractionOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#SocialInteraction"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isVentilationTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isVentilationTypeOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#hasVentilationType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#VentilationType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isWorkerFeatureOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isWorkerFeatureOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#hasWorkerFeature"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#WorkerFeature"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Worker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isWorkspaceOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isWorkspaceOf">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#isWorkspaceTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#isWorkspaceTypeOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#hasWorkspaceType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#WorkspaceType"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#ownsWorkspace -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#ownsWorkspace">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isWorkspaceOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Workspace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#performs -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#performs">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isPerformedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Worker"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#provides -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#provides">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Worker"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#reports -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#reports">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isReportedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/womo#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/womo#WorkerFeature"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/womo#supportsActivityType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/womo#supportsActivityType">
+        <owl:inverseOf rdf:resource="https://w3id.org/womo#isActivityTypeSupportedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="https://w3id.org/womo#ActivityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/womo#feedbackRequestTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#feedbackRequestTime">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Time of feedback request.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#feedbackStartTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#feedbackStartTime">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Time of feedback response start.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#feedbackTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#feedbackTime">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Time of feedback response conclusion.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#fromIFCDatatypeProperties -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#fromIFCDatatypeProperties"/>
+    
+
+
+    <!-- https://w3id.org/womo#organizationLogo -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#organizationLogo">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#organizationName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#organizationName">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#rating -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#rating">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/womo#Condition"/>
+                    <rdf:Description rdf:about="https://w3id.org/womo#Preference"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#ratingScaleName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#ratingScaleName">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#RatingScale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#ratingScaleOptions -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#ratingScaleOptions">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#RatingScale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#ratingScalePrompt -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#ratingScalePrompt">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#RatingScale"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#responseDuration -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#responseDuration">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Elapsed time between feedback response start and conclusion (sec).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#responseRatio -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#responseRatio">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Feedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Ratio of answered questions (%).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#value -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#value">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#HealthIndicator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#workspaceAreaPerOccupant -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#workspaceAreaPerOccupant">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/womo#fromIFCDatatypeProperties"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#workspaceHeight -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#workspaceHeight">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/womo#fromIFCDatatypeProperties"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#workspaceIsShared -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#workspaceIsShared">
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#workspaceLocalID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#workspaceLocalID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/womo#fromIFCDatatypeProperties"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#workspaceNetFloorArea -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#workspaceNetFloorArea">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/womo#fromIFCDatatypeProperties"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#workspaceNetVolume -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#workspaceNetVolume">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/womo#fromIFCDatatypeProperties"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#workspaceOccupancyNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#workspaceOccupancyNumber">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/womo#fromIFCDatatypeProperties"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#workspacePubliclyAccessible -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#workspacePubliclyAccessible">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/womo#fromIFCDatatypeProperties"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/womo#workspaceVolumePerOccupant -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/womo#workspaceVolumePerOccupant">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/womo#fromIFCDatatypeProperties"/>
+        <rdfs:domain rdf:resource="https://w3id.org/womo#Workspace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Procedure -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Procedure"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Property -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/Property"/>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+
+    <owl:Class rdf:about="https://schema.org/Person"/>
+    
+
+
+    <!-- https://w3id.org/bot#Element -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Element"/>
+    
+
+
+    <!-- https://w3id.org/bot#Space -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Space"/>
+    
+
+
+    <!-- https://w3id.org/womo#Activity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Thing that the worker is doing.</rdfs:comment>
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#ActivityCategory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#ActivityCategory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Specifies the category of the activity that the worker is performing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#ActivityType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#ActivityType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Specifies the type of activity that the worker is performing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#CommonSpace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#CommonSpace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#WorkspaceType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Condition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Condition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#WorkerFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#ConditionType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#ConditionType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Department -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Department">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#EnclosedOffice -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#EnclosedOffice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#Office"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Feedback -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Feedback">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#FeedbackGenerationType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#FeedbackGenerationType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Instances of this class enumerates possible feedback request generation types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#FeedbackResponseType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#FeedbackResponseType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Instances of this class enumerates possible feedback response types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#HealthIndicator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#HealthIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#WorkerFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#HealthIndicatorType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#HealthIndicatorType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#MechanicalVentilationControlType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#MechanicalVentilationControlType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Member -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Member">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#NaturalVentilationControlType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#NaturalVentilationControlType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#NotRespondedFeedback -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#NotRespondedFeedback">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#FeedbackResponseType"/>
+        <rdfs:comment>Instances of this class enumerates possible types of not responded feedback.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Office -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Office">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Organization -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Preference -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Preference">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#WorkerFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#RatingScale -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#RatingScale">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#RespondedFeedback -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#RespondedFeedback">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#FeedbackResponseType"/>
+        <rdfs:comment>Instances of this class enumerates possible types of responded feedback.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Room -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Room">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#WorkspaceType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#SocialInteraction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#SocialInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#VentilationType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#VentilationType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Worker -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Worker">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#Member"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#WorkerFeature -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#WorkerFeature">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Workspace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Workspace">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#WorkspaceElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#WorkspaceElement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#WorkspaceType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#WorkspaceType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/womo#Workstation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/womo#Workstation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/womo#WorkspaceType"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/womo#AcousticQuality -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#AcousticQuality">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#AirQuality -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#AirQuality">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#AirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#AirTemperature">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#AutomaticMVControlOnly -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#AutomaticMVControlOnly">
+        <rdf:type rdf:resource="https://w3id.org/womo#MechanicalVentilationControlType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#AutomaticNVControlOnly -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#AutomaticNVControlOnly">
+        <rdf:type rdf:resource="https://w3id.org/womo#NaturalVentilationControlType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Away -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Away">
+        <rdf:type rdf:resource="https://w3id.org/womo#NotRespondedFeedback"/>
+        <rdfs:comment>Feedback request declined because the worker is not at the workplace.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Break -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Break">
+        <rdf:type rdf:resource="https://w3id.org/womo#ActivityCategory"/>
+        <rdfs:comment>Activity that is a break from the worker&apos;s job.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#BreakCoffee -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#BreakCoffee">
+        <rdf:type rdf:resource="https://w3id.org/womo#ActivityType"/>
+        <rdfs:comment>Coffee break, usually short.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#BreakMeal -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#BreakMeal">
+        <rdf:type rdf:resource="https://w3id.org/womo#ActivityType"/>
+        <rdfs:comment>Break involving a meal. (e.g. lunch)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#BreakUnspecified -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#BreakUnspecified">
+        <rdf:type rdf:resource="https://w3id.org/womo#ActivityType"/>
+        <rdfs:comment>Unspecified break.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Busy -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Busy">
+        <rdf:type rdf:resource="https://w3id.org/womo#NotRespondedFeedback"/>
+        <rdfs:comment>Feedback request declined because the worker is too busy.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#CO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#CO2Concentration">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Concentration">
+        <rdf:type rdf:resource="https://w3id.org/womo#ConditionType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Concentration3PointsScale -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Concentration3PointsScale">
+        <rdf:type rdf:resource="https://w3id.org/womo#RatingScale"/>
+        <ratingScaleName>Concentration - 3 Points Scale</ratingScaleName>
+        <ratingScaleOptions>-1, Distracted; 0, Fine; 1, Focused</ratingScaleOptions>
+        <ratingScalePrompt>CONCENTRATION - I&apos;m feeling ...</ratingScalePrompt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#ConferenceRoom -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#ConferenceRoom">
+        <rdf:type rdf:resource="https://w3id.org/womo#Room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Cubicle -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Cubicle">
+        <rdf:type rdf:resource="https://w3id.org/womo#Office"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#DailyStepCount -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#DailyStepCount">
+        <rdf:type rdf:resource="https://w3id.org/womo#HealthIndicatorType"/>
+        <rdfs:comment>Daily step count measured in (step).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Direct -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Direct">
+        <rdf:type rdf:resource="https://w3id.org/womo#RespondedFeedback"/>
+        <rdfs:comment>Feedback request responded directly.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#EventFeedback -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#EventFeedback">
+        <rdf:type rdf:resource="https://w3id.org/womo#FeedbackGenerationType"/>
+        <rdfs:comment>Indicates a feedback request triggered by an event.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Group -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Group">
+        <rdf:type rdf:resource="https://w3id.org/womo#SocialInteraction"/>
+        <rdfs:comment>The worker is performing the activity in a larger group. Total of 5 or more workers.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#HeartRate -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#HeartRate">
+        <rdf:type rdf:resource="https://w3id.org/womo#HealthIndicatorType"/>
+        <rdfs:comment>Heart rate measured in (bpm).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#HomeOffice -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#HomeOffice">
+        <rdf:type rdf:resource="https://w3id.org/womo#NotRespondedFeedback"/>
+        <rdfs:comment>Feedback request declined because the worker is working from home.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Illuminance -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Illuminance">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#IndirectVentilationOnly -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#IndirectVentilationOnly">
+        <rdf:type rdf:resource="https://w3id.org/womo#VentilationType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Inferred_MeanVal_Hour -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Inferred_MeanVal_Hour">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Inferred_SingleVal -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Inferred_SingleVal">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#ManualMVControlOnly -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#ManualMVControlOnly">
+        <rdf:type rdf:resource="https://w3id.org/womo#MechanicalVentilationControlType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#ManualNVControlOnly -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#ManualNVControlOnly">
+        <rdf:type rdf:resource="https://w3id.org/womo#NaturalVentilationControlType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#MechanicalVentilationOnly -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#MechanicalVentilationOnly">
+        <rdf:type rdf:resource="https://w3id.org/womo#VentilationType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#MixedMVControl -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#MixedMVControl">
+        <rdf:type rdf:resource="https://w3id.org/womo#MechanicalVentilationControlType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#MixedNVControl -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#MixedNVControl">
+        <rdf:type rdf:resource="https://w3id.org/womo#NaturalVentilationControlType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#MixedVentilation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#MixedVentilation">
+        <rdf:type rdf:resource="https://w3id.org/womo#VentilationType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#NaturalVentilationOnly -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#NaturalVentilationOnly">
+        <rdf:type rdf:resource="https://w3id.org/womo#VentilationType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#NoiseLevel -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#NoiseLevel">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Observed_SingleVal -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Observed_SingleVal">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#OccupancyCount -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#OccupancyCount">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#OccupancyRatio -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#OccupancyRatio">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#OpenOffice -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#OpenOffice">
+        <rdf:type rdf:resource="https://w3id.org/womo#Office"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Pair -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Pair">
+        <rdf:type rdf:resource="https://w3id.org/womo#SocialInteraction"/>
+        <rdfs:comment>The worker is doing the activity together with another colleaugue.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Postponed -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Postponed">
+        <rdf:type rdf:resource="https://w3id.org/womo#RespondedFeedback"/>
+        <rdfs:comment>Feedback request responded after being postponed.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#PrivateOffice -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#PrivateOffice">
+        <rdf:type rdf:resource="https://w3id.org/womo#EnclosedOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Productivity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Productivity">
+        <rdf:type rdf:resource="https://w3id.org/womo#ConditionType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Productivity3PointsScale -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Productivity3PointsScale">
+        <rdf:type rdf:resource="https://w3id.org/womo#RatingScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#RandomFeedback -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#RandomFeedback">
+        <rdf:type rdf:resource="https://w3id.org/womo#FeedbackGenerationType"/>
+        <rdfs:comment>Indicates a feedback request generated at a random time within a daily time frame (e.g. 9:00-11:00 AM).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#RelativeHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#RelativeHumidity">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#ScheduledFeedback -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#ScheduledFeedback">
+        <rdf:type rdf:resource="https://w3id.org/womo#FeedbackGenerationType"/>
+        <rdfs:comment>Indicates a feedback request generated at a scheduled time (e.g. 13:00).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#SharedOffice -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#SharedOffice">
+        <rdf:type rdf:resource="https://w3id.org/womo#EnclosedOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#SmallGroup -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#SmallGroup">
+        <rdf:type rdf:resource="https://w3id.org/womo#SocialInteraction"/>
+        <rdfs:comment>The worker is performing the activity in a small group. Total of 3 or 4 workers.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Solo -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Solo">
+        <rdf:type rdf:resource="https://w3id.org/womo#SocialInteraction"/>
+        <rdfs:comment>The worker is doing the activity on his own.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#TeamRoom -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#TeamRoom">
+        <rdf:type rdf:resource="https://w3id.org/womo#EnclosedOffice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#ThermalQuality -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#ThermalQuality">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#ThermalQuality3PointsScale -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#ThermalQuality3PointsScale">
+        <rdf:type rdf:resource="https://w3id.org/womo#RatingScale"/>
+        <ratingScaleName>Thermal quality - 3 Points Scale</ratingScaleName>
+        <ratingScaleOptions>-1, Cooler; 0, No change; 1, Warmer</ratingScaleOptions>
+        <ratingScalePrompt>THERMAL QUALITY - Would you prefer to be...?</ratingScalePrompt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Timeout -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Timeout">
+        <rdf:type rdf:resource="https://w3id.org/womo#NotRespondedFeedback"/>
+        <rdfs:comment>Feedback request canceled after timeout.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Unspecified -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Unspecified">
+        <rdf:type rdf:resource="https://w3id.org/womo#NotRespondedFeedback"/>
+        <rdfs:comment>Feedback request declined for unspecified reasons.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#VisualQuality -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#VisualQuality">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#VoluntaryFeedback -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#VoluntaryFeedback">
+        <rdf:type rdf:resource="https://w3id.org/womo#FeedbackGenerationType"/>
+        <rdfs:comment>Indicates a feedback provided voluntarily by the worker/occupant at a given time.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#Work -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#Work">
+        <rdf:type rdf:resource="https://w3id.org/womo#ActivityCategory"/>
+        <rdfs:comment>Activity that is part of the the worker&apos;s job.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#WorkCall -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#WorkCall">
+        <rdf:type rdf:resource="https://w3id.org/womo#ActivityType"/>
+        <rdfs:comment>Work call or videocall.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#WorkGroup -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#WorkGroup">
+        <rdf:type rdf:resource="https://w3id.org/womo#ActivityType"/>
+        <rdfs:comment>Work activity performed by the worker together with one or more colleagues.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#WorkSolo -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#WorkSolo">
+        <rdf:type rdf:resource="https://w3id.org/womo#ActivityType"/>
+        <rdfs:comment>Work activity performed by the worker on his own.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/womo#WorkUnspecified -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/womo#WorkUnspecified">
+        <rdf:type rdf:resource="https://w3id.org/womo#ActivityType"/>
+        <rdfs:comment>Unspecified work activity.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

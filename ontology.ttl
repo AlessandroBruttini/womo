@@ -1,0 +1,1150 @@
+@prefix : <https://w3id.org/womo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/womo#> .
+
+<https://w3id.org/womo#> rdf:type owl:Ontology ;
+                          <http://purl.org/dc/terms/created> "2023-07-19"^^xsd:date ;
+                          <http://purl.org/dc/terms/creator> _:genid1 ;
+                          <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ,
+                                                             "CC-BY-40" ;
+                          <http://purl.org/dc/terms/title> "The Occupant-centric Workplace Management ontology (WOMO) " ;
+                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "womo" ;
+                          <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/womo#" ;
+                          rdfs:comment "The Occupant-centric Workplace Management (WOMO) ontology describes knowledge related to office environments and enables the development of a workplace Digital Twin system centred on the occupant experience."@en ;
+                          rdfs:label "The Occupant-centric Workplace Management ontology (WOMO) " ;
+                          owl:versionIRI "https://w3id.org/womo#" ;
+                          owl:versionInfo "1.0" .
+
+_:genid1 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:alessandro.bruttini@unifi.it> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0001-6317-2406> ;
+          <https://schema.org/memberOf> _:genid2 ;
+          <https://schema.org/name> "Alessandro Bruttini" .
+
+_:genid2 <https://schema.org/identifier> <https://www.linkedin.com/in/alessandro-bruttini-2228883b/> ;
+          <https://schema.org/name> "University of Florence, IT" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/email
+<https://schema.org/email> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/identifier
+<https://schema.org/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/memberOf
+<https://schema.org/memberOf> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/bot#containsElement
+<https://w3id.org/bot#containsElement> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/bot#hasSpace
+<https://w3id.org/bot#hasSpace> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/bot#hasSubElement
+<https://w3id.org/bot#hasSubElement> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/womo#containsWorkspaceElement
+:containsWorkspaceElement rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf <https://w3id.org/bot#containsElement> ;
+                          rdfs:domain :Workspace ;
+                          rdfs:range :WorkspaceElement .
+
+
+###  https://w3id.org/womo#hasActivity
+:hasActivity rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isPerformedAt ;
+             rdfs:domain :Workspace ;
+             rdfs:range :Activity .
+
+
+###  https://w3id.org/womo#hasActivityCategory
+:hasActivityCategory rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isActivityCategoryOf ;
+                     rdfs:domain :Activity ;
+                     rdfs:range :ActivityCategory .
+
+
+###  https://w3id.org/womo#hasActivityType
+:hasActivityType rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isActivityTypeOf ;
+                 rdfs:domain :Activity ;
+                 rdfs:range :ActivityType .
+
+
+###  https://w3id.org/womo#hasAllocatedWorkspace
+:hasAllocatedWorkspace rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :isAllocatedTo ;
+                       rdfs:domain :Worker ;
+                       rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#hasConditionType
+:hasConditionType rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Condition ;
+                  rdfs:range :ConditionType .
+
+
+###  https://w3id.org/womo#hasFeedback
+:hasFeedback rdf:type owl:ObjectProperty ;
+             rdfs:domain :Workspace ;
+             rdfs:range :Feedback .
+
+
+###  https://w3id.org/womo#hasFeedbackGenerationType
+:hasFeedbackGenerationType rdf:type owl:ObjectProperty ;
+                           rdfs:domain :Feedback ;
+                           rdfs:range :FeedbackGenerationType .
+
+
+###  https://w3id.org/womo#hasFeedbackResponseType
+:hasFeedbackResponseType rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :isFeedbackResponseTypeOf ;
+                         rdfs:domain :Feedback ;
+                         rdfs:range :FeedbackResponseType .
+
+
+###  https://w3id.org/womo#hasHealthIndicatorType
+:hasHealthIndicatorType rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :isHealthIndicatorTypeOf ;
+                        rdfs:domain :HealthIndicator ;
+                        rdfs:range :HealthIndicatorType .
+
+
+###  https://w3id.org/womo#hasMechanicalVentilationControlType
+:hasMechanicalVentilationControlType rdf:type owl:ObjectProperty ;
+                                     rdfs:domain :Workspace ;
+                                     rdfs:range :MechanicalVentilationControlType .
+
+
+###  https://w3id.org/womo#hasMember
+:hasMember rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isMemberOf ;
+           rdfs:domain :Organization ;
+           rdfs:range :Member .
+
+
+###  https://w3id.org/womo#hasNaturalVentilationControlType
+:hasNaturalVentilationControlType rdf:type owl:ObjectProperty ;
+                                  owl:inverseOf :isNaturalVentilationControlTypeOf ;
+                                  rdfs:domain :Workspace ;
+                                  rdfs:range :NaturalVentilationControlType .
+
+
+###  https://w3id.org/womo#hasPart
+:hasPart rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isPartOf ;
+         rdfs:domain :Organization ;
+         rdfs:range :Organization .
+
+
+###  https://w3id.org/womo#hasRatingScale
+:hasRatingScale rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isRatingScaleOf ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :Condition
+                                            :Preference
+                                          )
+                            ] ;
+                rdfs:range :RatingScale .
+
+
+###  https://w3id.org/womo#hasSocialInteraction
+:hasSocialInteraction rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :isSocialInteractionOf ;
+                      rdfs:domain :Activity ;
+                      rdfs:range :SocialInteraction .
+
+
+###  https://w3id.org/womo#hasSubWorkspaceElement
+:hasSubWorkspaceElement rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <https://w3id.org/bot#hasSubElement> ;
+                        rdfs:domain :WorkspaceElement ;
+                        rdfs:range :WorkspaceElement .
+
+
+###  https://w3id.org/womo#hasVentilationType
+:hasVentilationType rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Workspace ;
+                    rdfs:range :VentilationType .
+
+
+###  https://w3id.org/womo#hasWorkerFeature
+:hasWorkerFeature rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Worker ;
+                  rdfs:range :WorkerFeature .
+
+
+###  https://w3id.org/womo#hasWorkspace
+:hasWorkspace rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <https://w3id.org/bot#hasSpace> ;
+              rdfs:domain :Workspace ;
+              rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#hasWorkspaceType
+:hasWorkspaceType rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Workspace ;
+                  rdfs:range :WorkspaceType .
+
+
+###  https://w3id.org/womo#isActivityCategoryOf
+:isActivityCategoryOf rdf:type owl:ObjectProperty ;
+                      rdfs:domain :ActivityCategory ;
+                      rdfs:range :Activity .
+
+
+###  https://w3id.org/womo#isActivityTypeOf
+:isActivityTypeOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain :ActivityType ;
+                  rdfs:range :Activity .
+
+
+###  https://w3id.org/womo#isActivityTypeSupportedBy
+:isActivityTypeSupportedBy rdf:type owl:ObjectProperty ;
+                           rdfs:domain :ActivityType ;
+                           rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#isAllocatedTo
+:isAllocatedTo rdf:type owl:ObjectProperty ;
+               rdfs:domain :Workspace ;
+               rdfs:range :Worker .
+
+
+###  https://w3id.org/womo#isConditionTypeOf
+:isConditionTypeOf rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :hasConditionType ;
+                   rdfs:domain :ConditionType ;
+                   rdfs:range :Condition .
+
+
+###  https://w3id.org/womo#isFeedbackGenerationTypeOf
+:isFeedbackGenerationTypeOf rdf:type owl:ObjectProperty ;
+                            owl:inverseOf :hasFeedbackGenerationType ;
+                            rdfs:domain :FeedbackGenerationType ;
+                            rdfs:range :Feedback .
+
+
+###  https://w3id.org/womo#isFeedbackResponseTypeOf
+:isFeedbackResponseTypeOf rdf:type owl:ObjectProperty ;
+                          rdfs:domain :FeedbackResponseType ;
+                          rdfs:range :Feedback .
+
+
+###  https://w3id.org/womo#isHealthIndicatorTypeOf
+:isHealthIndicatorTypeOf rdf:type owl:ObjectProperty ;
+                         rdfs:domain :HealthIndicatorType ;
+                         rdfs:range :HealthIndicator .
+
+
+###  https://w3id.org/womo#isMechanicalVentilationControlTypeOf
+:isMechanicalVentilationControlTypeOf rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf :hasMechanicalVentilationControlType ;
+                                      rdfs:domain :MechanicalVentilationControlType ;
+                                      rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#isMemberOf
+:isMemberOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Member ;
+            rdfs:range :Organization .
+
+
+###  https://w3id.org/womo#isNaturalVentilationControlTypeOf
+:isNaturalVentilationControlTypeOf rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :NaturalVentilationControlType ;
+                                   rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :Organization ;
+          rdfs:range :Organization .
+
+
+###  https://w3id.org/womo#isPerformedAt
+:isPerformedAt rdf:type owl:ObjectProperty ;
+               rdfs:domain :Activity ;
+               rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#isPerformedBy
+:isPerformedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Activity ;
+               rdfs:range :Worker .
+
+
+###  https://w3id.org/womo#isPreferenceFor
+:isPreferenceFor rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isPreferredAs ;
+                 rdfs:domain :Preference ;
+                 rdfs:range <http://www.w3.org/ns/ssn/Property> .
+
+
+###  https://w3id.org/womo#isPreferredAs
+:isPreferredAs rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://www.w3.org/ns/ssn/Property> ;
+               rdfs:range :Preference .
+
+
+###  https://w3id.org/womo#isProvidedAt
+:isProvidedAt rdf:type owl:ObjectProperty ;
+              owl:inverseOf :hasFeedback ;
+              rdfs:domain :Feedback ;
+              rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#isProvidedBy
+:isProvidedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :provides ;
+              rdfs:domain :Feedback ;
+              rdfs:range :Worker .
+
+
+###  https://w3id.org/womo#isRatingScaleOf
+:isRatingScaleOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain :RatingScale ;
+                 rdfs:range [ rdf:type owl:Class ;
+                              owl:unionOf ( :Condition
+                                            :Preference
+                                          )
+                            ] .
+
+
+###  https://w3id.org/womo#isRelatedTo
+:isRelatedTo rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.w3.org/ns/ssn/Property> ;
+             rdfs:range <http://www.w3.org/ns/ssn/Property> .
+
+
+###  https://w3id.org/womo#isReportedBy
+:isReportedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :Activity
+                                          :WorkerFeature
+                                        )
+                          ] ;
+              rdfs:range :Feedback .
+
+
+###  https://w3id.org/womo#isSocialInteractionOf
+:isSocialInteractionOf rdf:type owl:ObjectProperty ;
+                       rdfs:domain :SocialInteraction ;
+                       rdfs:range :Activity .
+
+
+###  https://w3id.org/womo#isVentilationTypeOf
+:isVentilationTypeOf rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :hasVentilationType ;
+                     rdfs:domain :VentilationType ;
+                     rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#isWorkerFeatureOf
+:isWorkerFeatureOf rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :hasWorkerFeature ;
+                   rdfs:domain :WorkerFeature ;
+                   rdfs:range :Worker .
+
+
+###  https://w3id.org/womo#isWorkspaceOf
+:isWorkspaceOf rdf:type owl:ObjectProperty ;
+               rdfs:domain :Workspace ;
+               rdfs:range :Organization .
+
+
+###  https://w3id.org/womo#isWorkspaceTypeOf
+:isWorkspaceTypeOf rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :hasWorkspaceType ;
+                   rdfs:domain :WorkspaceType ;
+                   rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#ownsWorkspace
+:ownsWorkspace rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isWorkspaceOf ;
+               rdfs:domain :Organization ;
+               rdfs:range :Workspace .
+
+
+###  https://w3id.org/womo#performs
+:performs rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isPerformedBy ;
+          rdfs:domain :Worker ;
+          rdfs:range :Activity .
+
+
+###  https://w3id.org/womo#provides
+:provides rdf:type owl:ObjectProperty ;
+          rdfs:domain :Worker ;
+          rdfs:range :Feedback .
+
+
+###  https://w3id.org/womo#reports
+:reports rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isReportedBy ;
+         rdfs:domain :Feedback ;
+         rdfs:range [ rdf:type owl:Class ;
+                      owl:unionOf ( :Activity
+                                    :WorkerFeature
+                                  )
+                    ] .
+
+
+###  https://w3id.org/womo#supportsActivityType
+:supportsActivityType rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :isActivityTypeSupportedBy ;
+                      rdfs:domain :Workspace ;
+                      rdfs:range :ActivityType .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/womo#feedbackRequestTime
+:feedbackRequestTime rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Feedback ;
+                     rdfs:range xsd:dateTime ;
+                     rdfs:comment "Time of feedback request." .
+
+
+###  https://w3id.org/womo#feedbackStartTime
+:feedbackStartTime rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Feedback ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:comment "Time of feedback response start." .
+
+
+###  https://w3id.org/womo#feedbackTime
+:feedbackTime rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Feedback ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "Time of feedback response conclusion." .
+
+
+###  https://w3id.org/womo#fromIFCDatatypeProperties
+:fromIFCDatatypeProperties rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/womo#organizationLogo
+:organizationLogo rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Organization ;
+                  rdfs:range xsd:string .
+
+
+###  https://w3id.org/womo#organizationName
+:organizationName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Organization ;
+                  rdfs:range xsd:string .
+
+
+###  https://w3id.org/womo#rating
+:rating rdf:type owl:DatatypeProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( :Condition
+                                    :Preference
+                                  )
+                    ] ;
+        rdfs:range xsd:integer .
+
+
+###  https://w3id.org/womo#ratingScaleName
+:ratingScaleName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RatingScale ;
+                 rdfs:range xsd:string .
+
+
+###  https://w3id.org/womo#ratingScaleOptions
+:ratingScaleOptions rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :RatingScale ;
+                    rdfs:range xsd:string .
+
+
+###  https://w3id.org/womo#ratingScalePrompt
+:ratingScalePrompt rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :RatingScale ;
+                   rdfs:range xsd:string .
+
+
+###  https://w3id.org/womo#responseDuration
+:responseDuration rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Feedback ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "Elapsed time between feedback response start and conclusion (sec)." .
+
+
+###  https://w3id.org/womo#responseRatio
+:responseRatio rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Feedback ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Ratio of answered questions (%)." .
+
+
+###  https://w3id.org/womo#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:domain :HealthIndicator ;
+       rdfs:range xsd:float .
+
+
+###  https://w3id.org/womo#workspaceAreaPerOccupant
+:workspaceAreaPerOccupant rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :fromIFCDatatypeProperties ;
+                          rdfs:domain :Workspace ;
+                          rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/womo#workspaceHeight
+:workspaceHeight rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :fromIFCDatatypeProperties ;
+                 rdfs:domain :Workspace ;
+                 rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/womo#workspaceIsShared
+:workspaceIsShared rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Workspace ;
+                   rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/womo#workspaceLocalID
+:workspaceLocalID rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :fromIFCDatatypeProperties ;
+                  rdfs:domain :Workspace ;
+                  rdfs:range xsd:string .
+
+
+###  https://w3id.org/womo#workspaceNetFloorArea
+:workspaceNetFloorArea rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :fromIFCDatatypeProperties ;
+                       rdfs:domain :Workspace ;
+                       rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/womo#workspaceNetVolume
+:workspaceNetVolume rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :fromIFCDatatypeProperties ;
+                    rdfs:domain :Workspace ;
+                    rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/womo#workspaceOccupancyNumber
+:workspaceOccupancyNumber rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :fromIFCDatatypeProperties ;
+                          rdfs:domain :Workspace ;
+                          rdfs:range xsd:integer .
+
+
+###  https://w3id.org/womo#workspacePubliclyAccessible
+:workspacePubliclyAccessible rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf :fromIFCDatatypeProperties ;
+                             rdfs:domain :Workspace ;
+                             rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/womo#workspaceVolumePerOccupant
+:workspaceVolumePerOccupant rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :fromIFCDatatypeProperties ;
+                            rdfs:domain :Workspace ;
+                            rdfs:range xsd:decimal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Procedure
+<http://www.w3.org/ns/sosa/Procedure> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/ssn/Property
+<http://www.w3.org/ns/ssn/Property> rdf:type owl:Class .
+
+
+###  https://schema.org/Person
+<https://schema.org/Person> rdf:type owl:Class .
+
+
+###  https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> rdf:type owl:Class .
+
+
+###  https://w3id.org/bot#Space
+<https://w3id.org/bot#Space> rdf:type owl:Class .
+
+
+###  https://w3id.org/womo#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ;
+          rdfs:comment "Thing that the worker is doing." ;
+          rdfs:label "Activity" .
+
+
+###  https://w3id.org/womo#ActivityCategory
+:ActivityCategory rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing ;
+                  rdfs:comment "Specifies the category of the activity that the worker is performing." .
+
+
+###  https://w3id.org/womo#ActivityType
+:ActivityType rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing ;
+              rdfs:comment "Specifies the type of activity that the worker is performing." .
+
+
+###  https://w3id.org/womo#CommonSpace
+:CommonSpace rdf:type owl:Class ;
+             rdfs:subClassOf :WorkspaceType .
+
+
+###  https://w3id.org/womo#Condition
+:Condition rdf:type owl:Class ;
+           rdfs:subClassOf :WorkerFeature .
+
+
+###  https://w3id.org/womo#ConditionType
+:ConditionType rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#Department
+:Department rdf:type owl:Class ;
+            rdfs:subClassOf :Organization .
+
+
+###  https://w3id.org/womo#EnclosedOffice
+:EnclosedOffice rdf:type owl:Class ;
+                rdfs:subClassOf :Office .
+
+
+###  https://w3id.org/womo#Feedback
+:Feedback rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#FeedbackGenerationType
+:FeedbackGenerationType rdf:type owl:Class ;
+                        rdfs:subClassOf owl:Thing ;
+                        rdfs:comment "Instances of this class enumerates possible feedback request generation types." .
+
+
+###  https://w3id.org/womo#FeedbackResponseType
+:FeedbackResponseType rdf:type owl:Class ;
+                      rdfs:subClassOf owl:Thing ;
+                      rdfs:comment "Instances of this class enumerates possible feedback response types." .
+
+
+###  https://w3id.org/womo#HealthIndicator
+:HealthIndicator rdf:type owl:Class ;
+                 rdfs:subClassOf :WorkerFeature .
+
+
+###  https://w3id.org/womo#HealthIndicatorType
+:HealthIndicatorType rdf:type owl:Class ;
+                     rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#MechanicalVentilationControlType
+:MechanicalVentilationControlType rdf:type owl:Class ;
+                                  rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#Member
+:Member rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#NaturalVentilationControlType
+:NaturalVentilationControlType rdf:type owl:Class ;
+                               rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#NotRespondedFeedback
+:NotRespondedFeedback rdf:type owl:Class ;
+                      rdfs:subClassOf :FeedbackResponseType ;
+                      rdfs:comment "Instances of this class enumerates possible types of not responded feedback." .
+
+
+###  https://w3id.org/womo#Office
+:Office rdf:type owl:Class ;
+        rdfs:subClassOf :Room .
+
+
+###  https://w3id.org/womo#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#Preference
+:Preference rdf:type owl:Class ;
+            rdfs:subClassOf :WorkerFeature .
+
+
+###  https://w3id.org/womo#RatingScale
+:RatingScale rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#RespondedFeedback
+:RespondedFeedback rdf:type owl:Class ;
+                   rdfs:subClassOf :FeedbackResponseType ;
+                   rdfs:comment "Instances of this class enumerates possible types of responded feedback." .
+
+
+###  https://w3id.org/womo#Room
+:Room rdf:type owl:Class ;
+      rdfs:subClassOf :WorkspaceType .
+
+
+###  https://w3id.org/womo#SocialInteraction
+:SocialInteraction rdf:type owl:Class ;
+                   rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#VentilationType
+:VentilationType rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#Worker
+:Worker rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ,
+                        :Member .
+
+
+###  https://w3id.org/womo#WorkerFeature
+:WorkerFeature rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#Workspace
+:Workspace rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing ,
+                           <http://www.w3.org/ns/sosa/FeatureOfInterest> ,
+                           <https://w3id.org/bot#Space> .
+
+
+###  https://w3id.org/womo#WorkspaceElement
+:WorkspaceElement rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing ,
+                                  <http://www.w3.org/ns/sosa/FeatureOfInterest> ,
+                                  <https://w3id.org/bot#Element> .
+
+
+###  https://w3id.org/womo#WorkspaceType
+:WorkspaceType rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/womo#Workstation
+:Workstation rdf:type owl:Class ;
+             rdfs:subClassOf :WorkspaceType .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/womo#AcousticQuality
+:AcousticQuality rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/ns/ssn/Property> .
+
+
+###  https://w3id.org/womo#AirQuality
+:AirQuality rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/ns/ssn/Property> .
+
+
+###  https://w3id.org/womo#AirTemperature
+:AirTemperature rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://w3id.org/womo#AutomaticMVControlOnly
+:AutomaticMVControlOnly rdf:type owl:NamedIndividual ,
+                                 :MechanicalVentilationControlType .
+
+
+###  https://w3id.org/womo#AutomaticNVControlOnly
+:AutomaticNVControlOnly rdf:type owl:NamedIndividual ,
+                                 :NaturalVentilationControlType .
+
+
+###  https://w3id.org/womo#Away
+:Away rdf:type owl:NamedIndividual ,
+               :NotRespondedFeedback ;
+      rdfs:comment "Feedback request declined because the worker is not at the workplace." .
+
+
+###  https://w3id.org/womo#Break
+:Break rdf:type owl:NamedIndividual ,
+                :ActivityCategory ;
+       rdfs:comment "Activity that is a break from the worker's job." .
+
+
+###  https://w3id.org/womo#BreakCoffee
+:BreakCoffee rdf:type owl:NamedIndividual ,
+                      :ActivityType ;
+             rdfs:comment "Coffee break, usually short." .
+
+
+###  https://w3id.org/womo#BreakMeal
+:BreakMeal rdf:type owl:NamedIndividual ,
+                    :ActivityType ;
+           rdfs:comment "Break involving a meal. (e.g. lunch)" .
+
+
+###  https://w3id.org/womo#BreakUnspecified
+:BreakUnspecified rdf:type owl:NamedIndividual ,
+                           :ActivityType ;
+                  rdfs:comment "Unspecified break." .
+
+
+###  https://w3id.org/womo#Busy
+:Busy rdf:type owl:NamedIndividual ,
+               :NotRespondedFeedback ;
+      rdfs:comment "Feedback request declined because the worker is too busy." .
+
+
+###  https://w3id.org/womo#CO2Concentration
+:CO2Concentration rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://w3id.org/womo#Concentration
+:Concentration rdf:type owl:NamedIndividual ,
+                        :ConditionType .
+
+
+###  https://w3id.org/womo#Concentration3PointsScale
+:Concentration3PointsScale rdf:type owl:NamedIndividual ,
+                                    :RatingScale ;
+                           :ratingScaleName "Concentration - 3 Points Scale" ;
+                           :ratingScaleOptions "-1, Distracted; 0, Fine; 1, Focused" ;
+                           :ratingScalePrompt "CONCENTRATION - I'm feeling ..." .
+
+
+###  https://w3id.org/womo#ConferenceRoom
+:ConferenceRoom rdf:type owl:NamedIndividual ,
+                         :Room .
+
+
+###  https://w3id.org/womo#Cubicle
+:Cubicle rdf:type owl:NamedIndividual ,
+                  :Office .
+
+
+###  https://w3id.org/womo#DailyStepCount
+:DailyStepCount rdf:type owl:NamedIndividual ,
+                         :HealthIndicatorType ;
+                rdfs:comment "Daily step count measured in (step)." .
+
+
+###  https://w3id.org/womo#Direct
+:Direct rdf:type owl:NamedIndividual ,
+                 :RespondedFeedback ;
+        rdfs:comment "Feedback request responded directly." .
+
+
+###  https://w3id.org/womo#EventFeedback
+:EventFeedback rdf:type owl:NamedIndividual ,
+                        :FeedbackGenerationType ;
+               rdfs:comment "Indicates a feedback request triggered by an event." .
+
+
+###  https://w3id.org/womo#Group
+:Group rdf:type owl:NamedIndividual ,
+                :SocialInteraction ;
+       rdfs:comment "The worker is performing the activity in a larger group. Total of 5 or more workers." .
+
+
+###  https://w3id.org/womo#HeartRate
+:HeartRate rdf:type owl:NamedIndividual ,
+                    :HealthIndicatorType ;
+           rdfs:comment "Heart rate measured in (bpm)." .
+
+
+###  https://w3id.org/womo#HomeOffice
+:HomeOffice rdf:type owl:NamedIndividual ,
+                     :NotRespondedFeedback ;
+            rdfs:comment "Feedback request declined because the worker is working from home." .
+
+
+###  https://w3id.org/womo#Illuminance
+:Illuminance rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://w3id.org/womo#IndirectVentilationOnly
+:IndirectVentilationOnly rdf:type owl:NamedIndividual ,
+                                  :VentilationType .
+
+
+###  https://w3id.org/womo#Inferred_MeanVal_Hour
+:Inferred_MeanVal_Hour rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/ns/sosa/Procedure> .
+
+
+###  https://w3id.org/womo#Inferred_SingleVal
+:Inferred_SingleVal rdf:type owl:NamedIndividual ,
+                             <http://www.w3.org/ns/sosa/Procedure> .
+
+
+###  https://w3id.org/womo#ManualMVControlOnly
+:ManualMVControlOnly rdf:type owl:NamedIndividual ,
+                              :MechanicalVentilationControlType .
+
+
+###  https://w3id.org/womo#ManualNVControlOnly
+:ManualNVControlOnly rdf:type owl:NamedIndividual ,
+                              :NaturalVentilationControlType .
+
+
+###  https://w3id.org/womo#MechanicalVentilationOnly
+:MechanicalVentilationOnly rdf:type owl:NamedIndividual ,
+                                    :VentilationType .
+
+
+###  https://w3id.org/womo#MixedMVControl
+:MixedMVControl rdf:type owl:NamedIndividual ,
+                         :MechanicalVentilationControlType .
+
+
+###  https://w3id.org/womo#MixedNVControl
+:MixedNVControl rdf:type owl:NamedIndividual ,
+                         :NaturalVentilationControlType .
+
+
+###  https://w3id.org/womo#MixedVentilation
+:MixedVentilation rdf:type owl:NamedIndividual ,
+                           :VentilationType .
+
+
+###  https://w3id.org/womo#NaturalVentilationOnly
+:NaturalVentilationOnly rdf:type owl:NamedIndividual ,
+                                 :VentilationType .
+
+
+###  https://w3id.org/womo#NoiseLevel
+:NoiseLevel rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://w3id.org/womo#Observed_SingleVal
+:Observed_SingleVal rdf:type owl:NamedIndividual ,
+                             <http://www.w3.org/ns/sosa/Procedure> .
+
+
+###  https://w3id.org/womo#OccupancyCount
+:OccupancyCount rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://w3id.org/womo#OccupancyRatio
+:OccupancyRatio rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://w3id.org/womo#OpenOffice
+:OpenOffice rdf:type owl:NamedIndividual ,
+                     :Office .
+
+
+###  https://w3id.org/womo#Pair
+:Pair rdf:type owl:NamedIndividual ,
+               :SocialInteraction ;
+      rdfs:comment "The worker is doing the activity together with another colleaugue." .
+
+
+###  https://w3id.org/womo#Postponed
+:Postponed rdf:type owl:NamedIndividual ,
+                    :RespondedFeedback ;
+           rdfs:comment "Feedback request responded after being postponed." .
+
+
+###  https://w3id.org/womo#PrivateOffice
+:PrivateOffice rdf:type owl:NamedIndividual ,
+                        :EnclosedOffice .
+
+
+###  https://w3id.org/womo#Productivity
+:Productivity rdf:type owl:NamedIndividual ,
+                       :ConditionType .
+
+
+###  https://w3id.org/womo#Productivity3PointsScale
+:Productivity3PointsScale rdf:type owl:NamedIndividual ,
+                                   :RatingScale .
+
+
+###  https://w3id.org/womo#RandomFeedback
+:RandomFeedback rdf:type owl:NamedIndividual ,
+                         :FeedbackGenerationType ;
+                rdfs:comment "Indicates a feedback request generated at a random time within a daily time frame (e.g. 9:00-11:00 AM)." .
+
+
+###  https://w3id.org/womo#RelativeHumidity
+:RelativeHumidity rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://w3id.org/womo#ScheduledFeedback
+:ScheduledFeedback rdf:type owl:NamedIndividual ,
+                            :FeedbackGenerationType ;
+                   rdfs:comment "Indicates a feedback request generated at a scheduled time (e.g. 13:00)." .
+
+
+###  https://w3id.org/womo#SharedOffice
+:SharedOffice rdf:type owl:NamedIndividual ,
+                       :EnclosedOffice .
+
+
+###  https://w3id.org/womo#SmallGroup
+:SmallGroup rdf:type owl:NamedIndividual ,
+                     :SocialInteraction ;
+            rdfs:comment "The worker is performing the activity in a small group. Total of 3 or 4 workers." .
+
+
+###  https://w3id.org/womo#Solo
+:Solo rdf:type owl:NamedIndividual ,
+               :SocialInteraction ;
+      rdfs:comment "The worker is doing the activity on his own." .
+
+
+###  https://w3id.org/womo#TeamRoom
+:TeamRoom rdf:type owl:NamedIndividual ,
+                   :EnclosedOffice .
+
+
+###  https://w3id.org/womo#ThermalQuality
+:ThermalQuality rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/ns/ssn/Property> .
+
+
+###  https://w3id.org/womo#ThermalQuality3PointsScale
+:ThermalQuality3PointsScale rdf:type owl:NamedIndividual ,
+                                     :RatingScale ;
+                            :ratingScaleName "Thermal quality - 3 Points Scale" ;
+                            :ratingScaleOptions "-1, Cooler; 0, No change; 1, Warmer" ;
+                            :ratingScalePrompt "THERMAL QUALITY - Would you prefer to be...?" .
+
+
+###  https://w3id.org/womo#Timeout
+:Timeout rdf:type owl:NamedIndividual ,
+                  :NotRespondedFeedback ;
+         rdfs:comment "Feedback request canceled after timeout." .
+
+
+###  https://w3id.org/womo#Unspecified
+:Unspecified rdf:type owl:NamedIndividual ,
+                      :NotRespondedFeedback ;
+             rdfs:comment "Feedback request declined for unspecified reasons." .
+
+
+###  https://w3id.org/womo#VisualQuality
+:VisualQuality rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/ns/ssn/Property> .
+
+
+###  https://w3id.org/womo#VoluntaryFeedback
+:VoluntaryFeedback rdf:type owl:NamedIndividual ,
+                            :FeedbackGenerationType ;
+                   rdfs:comment "Indicates a feedback provided voluntarily by the worker/occupant at a given time." .
+
+
+###  https://w3id.org/womo#Work
+:Work rdf:type owl:NamedIndividual ,
+               :ActivityCategory ;
+      rdfs:comment "Activity that is part of the the worker's job." .
+
+
+###  https://w3id.org/womo#WorkCall
+:WorkCall rdf:type owl:NamedIndividual ,
+                   :ActivityType ;
+          rdfs:comment "Work call or videocall." .
+
+
+###  https://w3id.org/womo#WorkGroup
+:WorkGroup rdf:type owl:NamedIndividual ,
+                    :ActivityType ;
+           rdfs:comment "Work activity performed by the worker together with one or more colleagues." .
+
+
+###  https://w3id.org/womo#WorkSolo
+:WorkSolo rdf:type owl:NamedIndividual ,
+                   :ActivityType ;
+          rdfs:comment "Work activity performed by the worker on his own." .
+
+
+###  https://w3id.org/womo#WorkUnspecified
+:WorkUnspecified rdf:type owl:NamedIndividual ,
+                          :ActivityType ;
+                 rdfs:comment "Unspecified work activity." .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

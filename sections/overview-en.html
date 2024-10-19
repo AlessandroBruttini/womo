@@ -1,0 +1,848 @@
+<h2 id="overv" class="list">The Occupant-centric Workplace Management ontology (WOMO) : Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Activity" title="https://w3id.org/womo#Activity">Activity</a>
+   </li>
+   <li>
+      <a href="#ActivityCategory" title="https://w3id.org/womo#ActivityCategory">
+         <span>Activity Category</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ActivityType" title="https://w3id.org/womo#ActivityType">
+         <span>Activity Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#CommonSpace" title="https://w3id.org/womo#CommonSpace">
+         <span>Common Space</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Condition" title="https://w3id.org/womo#Condition">
+         <span>Condition</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ConditionType" title="https://w3id.org/womo#ConditionType">
+         <span>Condition Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Department" title="https://w3id.org/womo#Department">
+         <span>Department</span>
+      </a>
+   </li>
+   <li>
+      <a href="#EnclosedOffice" title="https://w3id.org/womo#EnclosedOffice">
+         <span>Enclosed Office</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Feedback" title="https://w3id.org/womo#Feedback">
+         <span>Feedback</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FeedbackGenerationType" title="https://w3id.org/womo#FeedbackGenerationType">
+         <span>Feedback Generation Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FeedbackResponseType" title="https://w3id.org/womo#FeedbackResponseType">
+         <span>Feedback Response Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#HealthIndicator" title="https://w3id.org/womo#HealthIndicator">
+         <span>Health Indicator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#HealthIndicatorType" title="https://w3id.org/womo#HealthIndicatorType">
+         <span>Health Indicator Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MechanicalVentilationControlType"
+         title="https://w3id.org/womo#MechanicalVentilationControlType">
+         <span>Mechanical Ventilation Control Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Member" title="https://w3id.org/womo#Member">
+         <span>Member</span>
+      </a>
+   </li>
+   <li>
+      <a href="#NaturalVentilationControlType"
+         title="https://w3id.org/womo#NaturalVentilationControlType">
+         <span>Natural Ventilation Control Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#NotRespondedFeedback" title="https://w3id.org/womo#NotRespondedFeedback">
+         <span>Not Responded Feedback</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Office" title="https://w3id.org/womo#Office">
+         <span>Office</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Organization" title="https://w3id.org/womo#Organization">
+         <span>Organization</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Preference" title="https://w3id.org/womo#Preference">
+         <span>Preference</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RatingScale" title="https://w3id.org/womo#RatingScale">
+         <span>Rating Scale</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RespondedFeedback" title="https://w3id.org/womo#RespondedFeedback">
+         <span>Responded Feedback</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Room" title="https://w3id.org/womo#Room">
+         <span>Room</span>
+      </a>
+   </li>
+   <li>
+      <a href="#SocialInteraction" title="https://w3id.org/womo#SocialInteraction">
+         <span>Social Interaction</span>
+      </a>
+   </li>
+   <li>
+      <a href="#VentilationType" title="https://w3id.org/womo#VentilationType">
+         <span>Ventilation Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Worker" title="https://w3id.org/womo#Worker">
+         <span>Worker</span>
+      </a>
+   </li>
+   <li>
+      <a href="#WorkerFeature" title="https://w3id.org/womo#WorkerFeature">
+         <span>Worker Feature</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Workspace" title="https://w3id.org/womo#Workspace">
+         <span>Workspace</span>
+      </a>
+   </li>
+   <li>
+      <a href="#WorkspaceElement" title="https://w3id.org/womo#WorkspaceElement">
+         <span>Workspace Element</span>
+      </a>
+   </li>
+   <li>
+      <a href="#WorkspaceType" title="https://w3id.org/womo#WorkspaceType">
+         <span>Workspace Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Workstation" title="https://w3id.org/womo#Workstation">
+         <span>Workstation</span>
+      </a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#containsWorkspaceElement" title="https://w3id.org/womo#containsWorkspaceElement">
+         <span>contains Workspace Element</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasActivity" title="https://w3id.org/womo#hasActivity">
+         <span>has Activity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasActivityCategory" title="https://w3id.org/womo#hasActivityCategory">
+         <span>has Activity Category</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasActivityType" title="https://w3id.org/womo#hasActivityType">
+         <span>has Activity Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasAllocatedWorkspace" title="https://w3id.org/womo#hasAllocatedWorkspace">
+         <span>has Allocated Workspace</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasConditionType" title="https://w3id.org/womo#hasConditionType">
+         <span>has Condition Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasFeedback" title="https://w3id.org/womo#hasFeedback">
+         <span>has Feedback</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasFeedbackGenerationType" title="https://w3id.org/womo#hasFeedbackGenerationType">
+         <span>has Feedback Generation Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasFeedbackResponseType" title="https://w3id.org/womo#hasFeedbackResponseType">
+         <span>has Feedback Response Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasHealthIndicatorType" title="https://w3id.org/womo#hasHealthIndicatorType">
+         <span>has Health Indicator Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasMechanicalVentilationControlType"
+         title="https://w3id.org/womo#hasMechanicalVentilationControlType">
+         <span>has Mechanical Ventilation Control Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasMember" title="https://w3id.org/womo#hasMember">
+         <span>has Member</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasNaturalVentilationControlType"
+         title="https://w3id.org/womo#hasNaturalVentilationControlType">
+         <span>has Natural Ventilation Control Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasPart" title="https://w3id.org/womo#hasPart">
+         <span>has Part</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasRatingScale" title="https://w3id.org/womo#hasRatingScale">
+         <span>has Rating Scale</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasSocialInteraction" title="https://w3id.org/womo#hasSocialInteraction">
+         <span>has Social Interaction</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasSubWorkspaceElement" title="https://w3id.org/womo#hasSubWorkspaceElement">
+         <span>has Sub Workspace Element</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasVentilationType" title="https://w3id.org/womo#hasVentilationType">
+         <span>has Ventilation Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasWorkerFeature" title="https://w3id.org/womo#hasWorkerFeature">
+         <span>has Worker Feature</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasWorkspace" title="https://w3id.org/womo#hasWorkspace">
+         <span>has Workspace</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasWorkspaceType" title="https://w3id.org/womo#hasWorkspaceType">
+         <span>has Workspace Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isActivityCategoryOf" title="https://w3id.org/womo#isActivityCategoryOf">
+         <span>is Activity Category Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isActivityTypeOf" title="https://w3id.org/womo#isActivityTypeOf">
+         <span>is Activity Type Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isActivityTypeSupportedBy" title="https://w3id.org/womo#isActivityTypeSupportedBy">
+         <span>is Activity Type Supported By</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isAllocatedTo" title="https://w3id.org/womo#isAllocatedTo">
+         <span>is Allocated To</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isConditionTypeOf" title="https://w3id.org/womo#isConditionTypeOf">
+         <span>is Condition Type Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isFeedbackGenerationTypeOf" title="https://w3id.org/womo#isFeedbackGenerationTypeOf">
+         <span>is Feedback Generation Type Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isFeedbackResponseTypeOf" title="https://w3id.org/womo#isFeedbackResponseTypeOf">
+         <span>is Feedback Response Type Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isHealthIndicatorTypeOf" title="https://w3id.org/womo#isHealthIndicatorTypeOf">
+         <span>is Health Indicator Type Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isMechanicalVentilationControlTypeOf"
+         title="https://w3id.org/womo#isMechanicalVentilationControlTypeOf">
+         <span>is Mechanical Ventilation Control Type Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isMemberOf" title="https://w3id.org/womo#isMemberOf">
+         <span>is Member Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isNaturalVentilationControlTypeOf"
+         title="https://w3id.org/womo#isNaturalVentilationControlTypeOf">
+         <span>is Natural Ventilation Control Type Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isPartOf" title="https://w3id.org/womo#isPartOf">
+         <span>is Part Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isPerformedAt" title="https://w3id.org/womo#isPerformedAt">
+         <span>is Performed At</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isPerformedBy" title="https://w3id.org/womo#isPerformedBy">
+         <span>is Performed By</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isPreferenceFor" title="https://w3id.org/womo#isPreferenceFor">
+         <span>is Preference For</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isPreferredAs" title="https://w3id.org/womo#isPreferredAs">
+         <span>is Preferred As</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isProvidedAt" title="https://w3id.org/womo#isProvidedAt">
+         <span>is Provided At</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isProvidedBy" title="https://w3id.org/womo#isProvidedBy">
+         <span>is Provided By</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isRatingScaleOf" title="https://w3id.org/womo#isRatingScaleOf">
+         <span>is Rating Scale Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isRelatedTo" title="https://w3id.org/womo#isRelatedTo">
+         <span>is Related To</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isReportedBy" title="https://w3id.org/womo#isReportedBy">
+         <span>is Reported By</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isSocialInteractionOf" title="https://w3id.org/womo#isSocialInteractionOf">
+         <span>is Social Interaction Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isVentilationTypeOf" title="https://w3id.org/womo#isVentilationTypeOf">
+         <span>is Ventilation Type Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isWorkerFeatureOf" title="https://w3id.org/womo#isWorkerFeatureOf">
+         <span>is Worker Feature Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isWorkspaceOf" title="https://w3id.org/womo#isWorkspaceOf">
+         <span>is Workspace Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isWorkspaceTypeOf" title="https://w3id.org/womo#isWorkspaceTypeOf">
+         <span>is Workspace Type Of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ownsWorkspace" title="https://w3id.org/womo#ownsWorkspace">
+         <span>owns Workspace</span>
+      </a>
+   </li>
+   <li>
+      <a href="#performs" title="https://w3id.org/womo#performs">
+         <span>performs</span>
+      </a>
+   </li>
+   <li>
+      <a href="#provides" title="https://w3id.org/womo#provides">
+         <span>provides</span>
+      </a>
+   </li>
+   <li>
+      <a href="#reports" title="https://w3id.org/womo#reports">
+         <span>reports</span>
+      </a>
+   </li>
+   <li>
+      <a href="#supportsActivityType" title="https://w3id.org/womo#supportsActivityType">
+         <span>supports Activity Type</span>
+      </a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#feedbackRequestTime" title="https://w3id.org/womo#feedbackRequestTime">
+         <span>feedback Request Time</span>
+      </a>
+   </li>
+   <li>
+      <a href="#feedbackStartTime" title="https://w3id.org/womo#feedbackStartTime">
+         <span>feedback Start Time</span>
+      </a>
+   </li>
+   <li>
+      <a href="#feedbackTime" title="https://w3id.org/womo#feedbackTime">
+         <span>feedback Time</span>
+      </a>
+   </li>
+   <li>
+      <a href="#organizationLogo" title="https://w3id.org/womo#organizationLogo">
+         <span>organization Logo</span>
+      </a>
+   </li>
+   <li>
+      <a href="#organizationName" title="https://w3id.org/womo#organizationName">
+         <span>organization Name</span>
+      </a>
+   </li>
+   <li>
+      <a href="#rating" title="https://w3id.org/womo#rating">
+         <span>rating</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ratingScaleName" title="https://w3id.org/womo#ratingScaleName">
+         <span>rating Scale Name</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ratingScaleOptions" title="https://w3id.org/womo#ratingScaleOptions">
+         <span>rating Scale Options</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ratingScalePrompt" title="https://w3id.org/womo#ratingScalePrompt">
+         <span>rating Scale Prompt</span>
+      </a>
+   </li>
+   <li>
+      <a href="#responseDuration" title="https://w3id.org/womo#responseDuration">
+         <span>response Duration</span>
+      </a>
+   </li>
+   <li>
+      <a href="#responseRatio" title="https://w3id.org/womo#responseRatio">
+         <span>response Ratio</span>
+      </a>
+   </li>
+   <li>
+      <a href="#value" title="https://w3id.org/womo#value">
+         <span>value</span>
+      </a>
+   </li>
+   <li>
+      <a href="#workspaceAreaPerOccupant" title="https://w3id.org/womo#workspaceAreaPerOccupant">
+         <span>workspace Area Per Occupant</span>
+      </a>
+   </li>
+   <li>
+      <a href="#workspaceHeight" title="https://w3id.org/womo#workspaceHeight">
+         <span>workspace Height</span>
+      </a>
+   </li>
+   <li>
+      <a href="#workspaceIsShared" title="https://w3id.org/womo#workspaceIsShared">
+         <span>workspace Is Shared</span>
+      </a>
+   </li>
+   <li>
+      <a href="#workspaceLocalID" title="https://w3id.org/womo#workspaceLocalID">
+         <span>workspace Local I D</span>
+      </a>
+   </li>
+   <li>
+      <a href="#workspaceNetFloorArea" title="https://w3id.org/womo#workspaceNetFloorArea">
+         <span>workspace Net Floor Area</span>
+      </a>
+   </li>
+   <li>
+      <a href="#workspaceNetVolume" title="https://w3id.org/womo#workspaceNetVolume">
+         <span>workspace Net Volume</span>
+      </a>
+   </li>
+   <li>
+      <a href="#workspaceOccupancyNumber" title="https://w3id.org/womo#workspaceOccupancyNumber">
+         <span>workspace Occupancy Number</span>
+      </a>
+   </li>
+   <li>
+      <a href="#workspacePubliclyAccessible"
+         title="https://w3id.org/womo#workspacePubliclyAccessible">
+         <span>workspace Publicly Accessible</span>
+      </a>
+   </li>
+   <li>
+      <a href="#workspaceVolumePerOccupant" title="https://w3id.org/womo#workspaceVolumePerOccupant">
+         <span>workspace Volume Per Occupant</span>
+      </a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AcousticQuality" title="https://w3id.org/womo#AcousticQuality">
+         <span>Acoustic Quality</span>
+      </a>
+   </li>
+   <li>
+      <a href="#AirQuality" title="https://w3id.org/womo#AirQuality">
+         <span>Air Quality</span>
+      </a>
+   </li>
+   <li>
+      <a href="#AirTemperature" title="https://w3id.org/womo#AirTemperature">
+         <span>Air Temperature</span>
+      </a>
+   </li>
+   <li>
+      <a href="#AutomaticMVControlOnly" title="https://w3id.org/womo#AutomaticMVControlOnly">
+         <span>Automatic M V Control Only</span>
+      </a>
+   </li>
+   <li>
+      <a href="#AutomaticNVControlOnly" title="https://w3id.org/womo#AutomaticNVControlOnly">
+         <span>Automatic N V Control Only</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Away" title="https://w3id.org/womo#Away">
+         <span>Away</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Break" title="https://w3id.org/womo#Break">
+         <span>Break</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BreakCoffee" title="https://w3id.org/womo#BreakCoffee">
+         <span>Break Coffee</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BreakMeal" title="https://w3id.org/womo#BreakMeal">
+         <span>Break Meal</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BreakUnspecified" title="https://w3id.org/womo#BreakUnspecified">
+         <span>Break Unspecified</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Busy" title="https://w3id.org/womo#Busy">
+         <span>Busy</span>
+      </a>
+   </li>
+   <li>
+      <a href="#CO2Concentration" title="https://w3id.org/womo#CO2Concentration">
+         <span>C O2 Concentration</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Concentration" title="https://w3id.org/womo#Concentration">
+         <span>Concentration</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Concentration3PointsScale" title="https://w3id.org/womo#Concentration3PointsScale">
+         <span>Concentration3 Points Scale</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ConferenceRoom" title="https://w3id.org/womo#ConferenceRoom">
+         <span>Conference Room</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Cubicle" title="https://w3id.org/womo#Cubicle">
+         <span>Cubicle</span>
+      </a>
+   </li>
+   <li>
+      <a href="#DailyStepCount" title="https://w3id.org/womo#DailyStepCount">
+         <span>Daily Step Count</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Direct" title="https://w3id.org/womo#Direct">
+         <span>Direct</span>
+      </a>
+   </li>
+   <li>
+      <a href="#EventFeedback" title="https://w3id.org/womo#EventFeedback">
+         <span>Event Feedback</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Group" title="https://w3id.org/womo#Group">
+         <span>Group</span>
+      </a>
+   </li>
+   <li>
+      <a href="#HeartRate" title="https://w3id.org/womo#HeartRate">
+         <span>Heart Rate</span>
+      </a>
+   </li>
+   <li>
+      <a href="#HomeOffice" title="https://w3id.org/womo#HomeOffice">
+         <span>Home Office</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Illuminance" title="https://w3id.org/womo#Illuminance">
+         <span>Illuminance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#IndirectVentilationOnly" title="https://w3id.org/womo#IndirectVentilationOnly">
+         <span>Indirect Ventilation Only</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Inferred_MeanVal_Hour" title="https://w3id.org/womo#Inferred_MeanVal_Hour">
+         <span>Inferred Mean Val Hour</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Inferred_SingleVal" title="https://w3id.org/womo#Inferred_SingleVal">
+         <span>Inferred Single Val</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ManualMVControlOnly" title="https://w3id.org/womo#ManualMVControlOnly">
+         <span>Manual M V Control Only</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ManualNVControlOnly" title="https://w3id.org/womo#ManualNVControlOnly">
+         <span>Manual N V Control Only</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MechanicalVentilationOnly" title="https://w3id.org/womo#MechanicalVentilationOnly">
+         <span>Mechanical Ventilation Only</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MixedMVControl" title="https://w3id.org/womo#MixedMVControl">
+         <span>Mixed M V Control</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MixedNVControl" title="https://w3id.org/womo#MixedNVControl">
+         <span>Mixed N V Control</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MixedVentilation" title="https://w3id.org/womo#MixedVentilation">
+         <span>Mixed Ventilation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#NaturalVentilationOnly" title="https://w3id.org/womo#NaturalVentilationOnly">
+         <span>Natural Ventilation Only</span>
+      </a>
+   </li>
+   <li>
+      <a href="#NoiseLevel" title="https://w3id.org/womo#NoiseLevel">
+         <span>Noise Level</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Observed_SingleVal" title="https://w3id.org/womo#Observed_SingleVal">
+         <span>Observed Single Val</span>
+      </a>
+   </li>
+   <li>
+      <a href="#OccupancyCount" title="https://w3id.org/womo#OccupancyCount">
+         <span>Occupancy Count</span>
+      </a>
+   </li>
+   <li>
+      <a href="#OccupancyRatio" title="https://w3id.org/womo#OccupancyRatio">
+         <span>Occupancy Ratio</span>
+      </a>
+   </li>
+   <li>
+      <a href="#OpenOffice" title="https://w3id.org/womo#OpenOffice">
+         <span>Open Office</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Pair" title="https://w3id.org/womo#Pair">
+         <span>Pair</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Postponed" title="https://w3id.org/womo#Postponed">
+         <span>Postponed</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PrivateOffice" title="https://w3id.org/womo#PrivateOffice">
+         <span>Private Office</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Productivity" title="https://w3id.org/womo#Productivity">
+         <span>Productivity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Productivity3PointsScale" title="https://w3id.org/womo#Productivity3PointsScale">
+         <span>Productivity3 Points Scale</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RandomFeedback" title="https://w3id.org/womo#RandomFeedback">
+         <span>Random Feedback</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RelativeHumidity" title="https://w3id.org/womo#RelativeHumidity">
+         <span>Relative Humidity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ScheduledFeedback" title="https://w3id.org/womo#ScheduledFeedback">
+         <span>Scheduled Feedback</span>
+      </a>
+   </li>
+   <li>
+      <a href="#SharedOffice" title="https://w3id.org/womo#SharedOffice">
+         <span>Shared Office</span>
+      </a>
+   </li>
+   <li>
+      <a href="#SmallGroup" title="https://w3id.org/womo#SmallGroup">
+         <span>Small Group</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Solo" title="https://w3id.org/womo#Solo">
+         <span>Solo</span>
+      </a>
+   </li>
+   <li>
+      <a href="#TeamRoom" title="https://w3id.org/womo#TeamRoom">
+         <span>Team Room</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ThermalQuality" title="https://w3id.org/womo#ThermalQuality">
+         <span>Thermal Quality</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ThermalQuality3PointsScale"
+         title="https://w3id.org/womo#ThermalQuality3PointsScale">
+         <span>Thermal Quality3 Points Scale</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Timeout" title="https://w3id.org/womo#Timeout">
+         <span>Timeout</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Unspecified" title="https://w3id.org/womo#Unspecified">
+         <span>Unspecified</span>
+      </a>
+   </li>
+   <li>
+      <a href="#VisualQuality" title="https://w3id.org/womo#VisualQuality">
+         <span>Visual Quality</span>
+      </a>
+   </li>
+   <li>
+      <a href="#VoluntaryFeedback" title="https://w3id.org/womo#VoluntaryFeedback">
+         <span>Voluntary Feedback</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Work" title="https://w3id.org/womo#Work">
+         <span>Work</span>
+      </a>
+   </li>
+   <li>
+      <a href="#WorkCall" title="https://w3id.org/womo#WorkCall">
+         <span>Work Call</span>
+      </a>
+   </li>
+   <li>
+      <a href="#WorkGroup" title="https://w3id.org/womo#WorkGroup">
+         <span>Work Group</span>
+      </a>
+   </li>
+   <li>
+      <a href="#WorkSolo" title="https://w3id.org/womo#WorkSolo">
+         <span>Work Solo</span>
+      </a>
+   </li>
+   <li>
+      <a href="#WorkUnspecified" title="https://w3id.org/womo#WorkUnspecified">
+         <span>Work Unspecified</span>
+      </a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 

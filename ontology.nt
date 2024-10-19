@@ -1,0 +1,1001 @@
+<https://w3id.org/womo#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/womo#> <http://purl.org/dc/terms/created> "2023-07-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/womo#> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <https://schema.org/name> "Alessandro Bruttini" .
+_:genid1 <https://schema.org/memberOf> _:genid2 .
+_:genid2 <https://schema.org/name> "University of Florence, IT" .
+_:genid2 <https://schema.org/identifier> <https://www.linkedin.com/in/alessandro-bruttini-2228883b/> .
+_:genid1 <https://schema.org/identifier> <https://orcid.org/0000-0001-6317-2406> .
+_:genid1 <https://schema.org/email> <mailto:alessandro.bruttini@unifi.it> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/womo#> <http://purl.org/dc/terms/license> "CC-BY-40" .
+<https://w3id.org/womo#> <http://purl.org/dc/terms/title> "The Occupant-centric Workplace Management ontology (WOMO) " .
+<https://w3id.org/womo#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "womo" .
+<https://w3id.org/womo#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/womo#" .
+<https://w3id.org/womo#> <http://www.w3.org/2000/01/rdf-schema#comment> "The Occupant-centric Workplace Management (WOMO) ontology describes knowledge related to office environments and enables the development of a workplace Digital Twin system centred on the occupant experience."@en .
+<https://w3id.org/womo#> <http://www.w3.org/2000/01/rdf-schema#label> "The Occupant-centric Workplace Management ontology (WOMO) " .
+<https://w3id.org/womo#> <http://www.w3.org/2002/07/owl#versionIRI> "https://w3id.org/womo#" .
+<https://w3id.org/womo#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/email
+<https://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/identifier
+<https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/memberOf
+<https://schema.org/memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bot#containsElement
+<https://w3id.org/bot#containsElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/bot#hasSpace
+<https://w3id.org/bot#hasSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/bot#hasSubElement
+<https://w3id.org/bot#hasSubElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/womo#containsWorkspaceElement
+<https://w3id.org/womo#containsWorkspaceElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#containsWorkspaceElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/bot#containsElement> .
+<https://w3id.org/womo#containsWorkspaceElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#containsWorkspaceElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#WorkspaceElement> .
+# 
+# https://w3id.org/womo#hasActivity
+<https://w3id.org/womo#hasActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasActivity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isPerformedAt> .
+<https://w3id.org/womo#hasActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#hasActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Activity> .
+# 
+# https://w3id.org/womo#hasActivityCategory
+<https://w3id.org/womo#hasActivityCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasActivityCategory> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isActivityCategoryOf> .
+<https://w3id.org/womo#hasActivityCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Activity> .
+<https://w3id.org/womo#hasActivityCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#ActivityCategory> .
+# 
+# https://w3id.org/womo#hasActivityType
+<https://w3id.org/womo#hasActivityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasActivityType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isActivityTypeOf> .
+<https://w3id.org/womo#hasActivityType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Activity> .
+<https://w3id.org/womo#hasActivityType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#ActivityType> .
+# 
+# https://w3id.org/womo#hasAllocatedWorkspace
+<https://w3id.org/womo#hasAllocatedWorkspace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasAllocatedWorkspace> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isAllocatedTo> .
+<https://w3id.org/womo#hasAllocatedWorkspace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Worker> .
+<https://w3id.org/womo#hasAllocatedWorkspace> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#hasConditionType
+<https://w3id.org/womo#hasConditionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasConditionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Condition> .
+<https://w3id.org/womo#hasConditionType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#ConditionType> .
+# 
+# https://w3id.org/womo#hasFeedback
+<https://w3id.org/womo#hasFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasFeedback> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#hasFeedback> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Feedback> .
+# 
+# https://w3id.org/womo#hasFeedbackGenerationType
+<https://w3id.org/womo#hasFeedbackGenerationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasFeedbackGenerationType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#hasFeedbackGenerationType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#FeedbackGenerationType> .
+# 
+# https://w3id.org/womo#hasFeedbackResponseType
+<https://w3id.org/womo#hasFeedbackResponseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasFeedbackResponseType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isFeedbackResponseTypeOf> .
+<https://w3id.org/womo#hasFeedbackResponseType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#hasFeedbackResponseType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#FeedbackResponseType> .
+# 
+# https://w3id.org/womo#hasHealthIndicatorType
+<https://w3id.org/womo#hasHealthIndicatorType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasHealthIndicatorType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isHealthIndicatorTypeOf> .
+<https://w3id.org/womo#hasHealthIndicatorType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#HealthIndicator> .
+<https://w3id.org/womo#hasHealthIndicatorType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#HealthIndicatorType> .
+# 
+# https://w3id.org/womo#hasMechanicalVentilationControlType
+<https://w3id.org/womo#hasMechanicalVentilationControlType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasMechanicalVentilationControlType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#hasMechanicalVentilationControlType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#MechanicalVentilationControlType> .
+# 
+# https://w3id.org/womo#hasMember
+<https://w3id.org/womo#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isMemberOf> .
+<https://w3id.org/womo#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Organization> .
+<https://w3id.org/womo#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Member> .
+# 
+# https://w3id.org/womo#hasNaturalVentilationControlType
+<https://w3id.org/womo#hasNaturalVentilationControlType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasNaturalVentilationControlType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isNaturalVentilationControlTypeOf> .
+<https://w3id.org/womo#hasNaturalVentilationControlType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#hasNaturalVentilationControlType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#NaturalVentilationControlType> .
+# 
+# https://w3id.org/womo#hasPart
+<https://w3id.org/womo#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isPartOf> .
+<https://w3id.org/womo#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Organization> .
+<https://w3id.org/womo#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Organization> .
+# 
+# https://w3id.org/womo#hasRatingScale
+<https://w3id.org/womo#hasRatingScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasRatingScale> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isRatingScaleOf> .
+<https://w3id.org/womo#hasRatingScale> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#Preference> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#Condition> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#hasRatingScale> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#RatingScale> .
+# 
+# https://w3id.org/womo#hasSocialInteraction
+<https://w3id.org/womo#hasSocialInteraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasSocialInteraction> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isSocialInteractionOf> .
+<https://w3id.org/womo#hasSocialInteraction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Activity> .
+<https://w3id.org/womo#hasSocialInteraction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#SocialInteraction> .
+# 
+# https://w3id.org/womo#hasSubWorkspaceElement
+<https://w3id.org/womo#hasSubWorkspaceElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasSubWorkspaceElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/bot#hasSubElement> .
+<https://w3id.org/womo#hasSubWorkspaceElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#WorkspaceElement> .
+<https://w3id.org/womo#hasSubWorkspaceElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#WorkspaceElement> .
+# 
+# https://w3id.org/womo#hasVentilationType
+<https://w3id.org/womo#hasVentilationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasVentilationType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#hasVentilationType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#VentilationType> .
+# 
+# https://w3id.org/womo#hasWorkerFeature
+<https://w3id.org/womo#hasWorkerFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasWorkerFeature> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Worker> .
+<https://w3id.org/womo#hasWorkerFeature> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#WorkerFeature> .
+# 
+# https://w3id.org/womo#hasWorkspace
+<https://w3id.org/womo#hasWorkspace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasWorkspace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/bot#hasSpace> .
+<https://w3id.org/womo#hasWorkspace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#hasWorkspace> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#hasWorkspaceType
+<https://w3id.org/womo#hasWorkspaceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#hasWorkspaceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#hasWorkspaceType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#WorkspaceType> .
+# 
+# https://w3id.org/womo#isActivityCategoryOf
+<https://w3id.org/womo#isActivityCategoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isActivityCategoryOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#ActivityCategory> .
+<https://w3id.org/womo#isActivityCategoryOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Activity> .
+# 
+# https://w3id.org/womo#isActivityTypeOf
+<https://w3id.org/womo#isActivityTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isActivityTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#ActivityType> .
+<https://w3id.org/womo#isActivityTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Activity> .
+# 
+# https://w3id.org/womo#isActivityTypeSupportedBy
+<https://w3id.org/womo#isActivityTypeSupportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isActivityTypeSupportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#ActivityType> .
+<https://w3id.org/womo#isActivityTypeSupportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#isAllocatedTo
+<https://w3id.org/womo#isAllocatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isAllocatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#isAllocatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Worker> .
+# 
+# https://w3id.org/womo#isConditionTypeOf
+<https://w3id.org/womo#isConditionTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isConditionTypeOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#hasConditionType> .
+<https://w3id.org/womo#isConditionTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#ConditionType> .
+<https://w3id.org/womo#isConditionTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Condition> .
+# 
+# https://w3id.org/womo#isFeedbackGenerationTypeOf
+<https://w3id.org/womo#isFeedbackGenerationTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isFeedbackGenerationTypeOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#hasFeedbackGenerationType> .
+<https://w3id.org/womo#isFeedbackGenerationTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#FeedbackGenerationType> .
+<https://w3id.org/womo#isFeedbackGenerationTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Feedback> .
+# 
+# https://w3id.org/womo#isFeedbackResponseTypeOf
+<https://w3id.org/womo#isFeedbackResponseTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isFeedbackResponseTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#FeedbackResponseType> .
+<https://w3id.org/womo#isFeedbackResponseTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Feedback> .
+# 
+# https://w3id.org/womo#isHealthIndicatorTypeOf
+<https://w3id.org/womo#isHealthIndicatorTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isHealthIndicatorTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#HealthIndicatorType> .
+<https://w3id.org/womo#isHealthIndicatorTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#HealthIndicator> .
+# 
+# https://w3id.org/womo#isMechanicalVentilationControlTypeOf
+<https://w3id.org/womo#isMechanicalVentilationControlTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isMechanicalVentilationControlTypeOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#hasMechanicalVentilationControlType> .
+<https://w3id.org/womo#isMechanicalVentilationControlTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#MechanicalVentilationControlType> .
+<https://w3id.org/womo#isMechanicalVentilationControlTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#isMemberOf
+<https://w3id.org/womo#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Member> .
+<https://w3id.org/womo#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Organization> .
+# 
+# https://w3id.org/womo#isNaturalVentilationControlTypeOf
+<https://w3id.org/womo#isNaturalVentilationControlTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isNaturalVentilationControlTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#NaturalVentilationControlType> .
+<https://w3id.org/womo#isNaturalVentilationControlTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#isPartOf
+<https://w3id.org/womo#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Organization> .
+<https://w3id.org/womo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Organization> .
+# 
+# https://w3id.org/womo#isPerformedAt
+<https://w3id.org/womo#isPerformedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isPerformedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Activity> .
+<https://w3id.org/womo#isPerformedAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#isPerformedBy
+<https://w3id.org/womo#isPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Activity> .
+<https://w3id.org/womo#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Worker> .
+# 
+# https://w3id.org/womo#isPreferenceFor
+<https://w3id.org/womo#isPreferenceFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isPreferenceFor> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isPreferredAs> .
+<https://w3id.org/womo#isPreferenceFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Preference> .
+<https://w3id.org/womo#isPreferenceFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/womo#isPreferredAs
+<https://w3id.org/womo#isPreferredAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isPreferredAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/ssn/Property> .
+<https://w3id.org/womo#isPreferredAs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Preference> .
+# 
+# https://w3id.org/womo#isProvidedAt
+<https://w3id.org/womo#isProvidedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isProvidedAt> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#hasFeedback> .
+<https://w3id.org/womo#isProvidedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#isProvidedAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#isProvidedBy
+<https://w3id.org/womo#isProvidedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isProvidedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#provides> .
+<https://w3id.org/womo#isProvidedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#isProvidedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Worker> .
+# 
+# https://w3id.org/womo#isRatingScaleOf
+<https://w3id.org/womo#isRatingScaleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isRatingScaleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#RatingScale> .
+<https://w3id.org/womo#isRatingScaleOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#Preference> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#Condition> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/womo#isRelatedTo
+<https://w3id.org/womo#isRelatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/ssn/Property> .
+<https://w3id.org/womo#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/ssn/Property> .
+# 
+# https://w3id.org/womo#isReportedBy
+<https://w3id.org/womo#isReportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isReportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#WorkerFeature> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#Activity> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#isReportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Feedback> .
+# 
+# https://w3id.org/womo#isSocialInteractionOf
+<https://w3id.org/womo#isSocialInteractionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isSocialInteractionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#SocialInteraction> .
+<https://w3id.org/womo#isSocialInteractionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Activity> .
+# 
+# https://w3id.org/womo#isVentilationTypeOf
+<https://w3id.org/womo#isVentilationTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isVentilationTypeOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#hasVentilationType> .
+<https://w3id.org/womo#isVentilationTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#VentilationType> .
+<https://w3id.org/womo#isVentilationTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#isWorkerFeatureOf
+<https://w3id.org/womo#isWorkerFeatureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isWorkerFeatureOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#hasWorkerFeature> .
+<https://w3id.org/womo#isWorkerFeatureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#WorkerFeature> .
+<https://w3id.org/womo#isWorkerFeatureOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Worker> .
+# 
+# https://w3id.org/womo#isWorkspaceOf
+<https://w3id.org/womo#isWorkspaceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isWorkspaceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#isWorkspaceOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Organization> .
+# 
+# https://w3id.org/womo#isWorkspaceTypeOf
+<https://w3id.org/womo#isWorkspaceTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#isWorkspaceTypeOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#hasWorkspaceType> .
+<https://w3id.org/womo#isWorkspaceTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#WorkspaceType> .
+<https://w3id.org/womo#isWorkspaceTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#ownsWorkspace
+<https://w3id.org/womo#ownsWorkspace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#ownsWorkspace> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isWorkspaceOf> .
+<https://w3id.org/womo#ownsWorkspace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Organization> .
+<https://w3id.org/womo#ownsWorkspace> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Workspace> .
+# 
+# https://w3id.org/womo#performs
+<https://w3id.org/womo#performs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#performs> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isPerformedBy> .
+<https://w3id.org/womo#performs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Worker> .
+<https://w3id.org/womo#performs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Activity> .
+# 
+# https://w3id.org/womo#provides
+<https://w3id.org/womo#provides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#provides> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Worker> .
+<https://w3id.org/womo#provides> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#Feedback> .
+# 
+# https://w3id.org/womo#reports
+<https://w3id.org/womo#reports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#reports> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isReportedBy> .
+<https://w3id.org/womo#reports> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#reports> <http://www.w3.org/2000/01/rdf-schema#range> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#WorkerFeature> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#Activity> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/womo#supportsActivityType
+<https://w3id.org/womo#supportsActivityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/womo#supportsActivityType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/womo#isActivityTypeSupportedBy> .
+<https://w3id.org/womo#supportsActivityType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#supportsActivityType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/womo#ActivityType> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/womo#feedbackRequestTime
+<https://w3id.org/womo#feedbackRequestTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#feedbackRequestTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#feedbackRequestTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/womo#feedbackRequestTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Time of feedback request." .
+# 
+# https://w3id.org/womo#feedbackStartTime
+<https://w3id.org/womo#feedbackStartTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#feedbackStartTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#feedbackStartTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/womo#feedbackStartTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Time of feedback response start." .
+# 
+# https://w3id.org/womo#feedbackTime
+<https://w3id.org/womo#feedbackTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#feedbackTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#feedbackTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/womo#feedbackTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Time of feedback response conclusion." .
+# 
+# https://w3id.org/womo#fromIFCDatatypeProperties
+<https://w3id.org/womo#fromIFCDatatypeProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/womo#organizationLogo
+<https://w3id.org/womo#organizationLogo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#organizationLogo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Organization> .
+<https://w3id.org/womo#organizationLogo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/womo#organizationName
+<https://w3id.org/womo#organizationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#organizationName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Organization> .
+<https://w3id.org/womo#organizationName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/womo#rating
+<https://w3id.org/womo#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#rating> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#Preference> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/womo#Condition> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/womo#ratingScaleName
+<https://w3id.org/womo#ratingScaleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#ratingScaleName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#RatingScale> .
+<https://w3id.org/womo#ratingScaleName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/womo#ratingScaleOptions
+<https://w3id.org/womo#ratingScaleOptions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#ratingScaleOptions> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#RatingScale> .
+<https://w3id.org/womo#ratingScaleOptions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/womo#ratingScalePrompt
+<https://w3id.org/womo#ratingScalePrompt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#ratingScalePrompt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#RatingScale> .
+<https://w3id.org/womo#ratingScalePrompt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/womo#responseDuration
+<https://w3id.org/womo#responseDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#responseDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#responseDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/womo#responseDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Elapsed time between feedback response start and conclusion (sec)." .
+# 
+# https://w3id.org/womo#responseRatio
+<https://w3id.org/womo#responseRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#responseRatio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Feedback> .
+<https://w3id.org/womo#responseRatio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/womo#responseRatio> <http://www.w3.org/2000/01/rdf-schema#comment> "Ratio of answered questions (%)." .
+# 
+# https://w3id.org/womo#value
+<https://w3id.org/womo#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#value> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#HealthIndicator> .
+<https://w3id.org/womo#value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# https://w3id.org/womo#workspaceAreaPerOccupant
+<https://w3id.org/womo#workspaceAreaPerOccupant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#workspaceAreaPerOccupant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/womo#fromIFCDatatypeProperties> .
+<https://w3id.org/womo#workspaceAreaPerOccupant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#workspaceAreaPerOccupant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/womo#workspaceHeight
+<https://w3id.org/womo#workspaceHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#workspaceHeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/womo#fromIFCDatatypeProperties> .
+<https://w3id.org/womo#workspaceHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#workspaceHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/womo#workspaceIsShared
+<https://w3id.org/womo#workspaceIsShared> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#workspaceIsShared> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#workspaceIsShared> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/womo#workspaceLocalID
+<https://w3id.org/womo#workspaceLocalID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#workspaceLocalID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/womo#fromIFCDatatypeProperties> .
+<https://w3id.org/womo#workspaceLocalID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#workspaceLocalID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/womo#workspaceNetFloorArea
+<https://w3id.org/womo#workspaceNetFloorArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#workspaceNetFloorArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/womo#fromIFCDatatypeProperties> .
+<https://w3id.org/womo#workspaceNetFloorArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#workspaceNetFloorArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/womo#workspaceNetVolume
+<https://w3id.org/womo#workspaceNetVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#workspaceNetVolume> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/womo#fromIFCDatatypeProperties> .
+<https://w3id.org/womo#workspaceNetVolume> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#workspaceNetVolume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/womo#workspaceOccupancyNumber
+<https://w3id.org/womo#workspaceOccupancyNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#workspaceOccupancyNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/womo#fromIFCDatatypeProperties> .
+<https://w3id.org/womo#workspaceOccupancyNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#workspaceOccupancyNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/womo#workspacePubliclyAccessible
+<https://w3id.org/womo#workspacePubliclyAccessible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#workspacePubliclyAccessible> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/womo#fromIFCDatatypeProperties> .
+<https://w3id.org/womo#workspacePubliclyAccessible> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#workspacePubliclyAccessible> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/womo#workspaceVolumePerOccupant
+<https://w3id.org/womo#workspaceVolumePerOccupant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/womo#workspaceVolumePerOccupant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/womo#fromIFCDatatypeProperties> .
+<https://w3id.org/womo#workspaceVolumePerOccupant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/womo#Workspace> .
+<https://w3id.org/womo#workspaceVolumePerOccupant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/Procedure
+<http://www.w3.org/ns/sosa/Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/ssn/Property
+# 
+# https://schema.org/Person
+# 
+# https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bot#Space
+<https://w3id.org/bot#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/womo#Activity
+<https://w3id.org/womo#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/womo#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Thing that the worker is doing." .
+<https://w3id.org/womo#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
+# 
+# https://w3id.org/womo#ActivityCategory
+<https://w3id.org/womo#ActivityCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#ActivityCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/womo#ActivityCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the category of the activity that the worker is performing." .
+# 
+# https://w3id.org/womo#ActivityType
+<https://w3id.org/womo#ActivityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#ActivityType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/womo#ActivityType> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the type of activity that the worker is performing." .
+# 
+# https://w3id.org/womo#CommonSpace
+<https://w3id.org/womo#CommonSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#CommonSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#WorkspaceType> .
+# 
+# https://w3id.org/womo#Condition
+<https://w3id.org/womo#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#WorkerFeature> .
+# 
+# https://w3id.org/womo#ConditionType
+<https://w3id.org/womo#ConditionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#ConditionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#Department
+<https://w3id.org/womo#Department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Department> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#Organization> .
+# 
+# https://w3id.org/womo#EnclosedOffice
+<https://w3id.org/womo#EnclosedOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#EnclosedOffice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#Office> .
+# 
+# https://w3id.org/womo#Feedback
+<https://w3id.org/womo#Feedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Feedback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#FeedbackGenerationType
+<https://w3id.org/womo#FeedbackGenerationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#FeedbackGenerationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/womo#FeedbackGenerationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Instances of this class enumerates possible feedback request generation types." .
+# 
+# https://w3id.org/womo#FeedbackResponseType
+<https://w3id.org/womo#FeedbackResponseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#FeedbackResponseType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/womo#FeedbackResponseType> <http://www.w3.org/2000/01/rdf-schema#comment> "Instances of this class enumerates possible feedback response types." .
+# 
+# https://w3id.org/womo#HealthIndicator
+<https://w3id.org/womo#HealthIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#HealthIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#WorkerFeature> .
+# 
+# https://w3id.org/womo#HealthIndicatorType
+<https://w3id.org/womo#HealthIndicatorType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#HealthIndicatorType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#MechanicalVentilationControlType
+<https://w3id.org/womo#MechanicalVentilationControlType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#MechanicalVentilationControlType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#Member
+<https://w3id.org/womo#Member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Member> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#NaturalVentilationControlType
+<https://w3id.org/womo#NaturalVentilationControlType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#NaturalVentilationControlType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#NotRespondedFeedback
+<https://w3id.org/womo#NotRespondedFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#NotRespondedFeedback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#FeedbackResponseType> .
+<https://w3id.org/womo#NotRespondedFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Instances of this class enumerates possible types of not responded feedback." .
+# 
+# https://w3id.org/womo#Office
+<https://w3id.org/womo#Office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Office> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#Room> .
+# 
+# https://w3id.org/womo#Organization
+<https://w3id.org/womo#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#Preference
+<https://w3id.org/womo#Preference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Preference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#WorkerFeature> .
+# 
+# https://w3id.org/womo#RatingScale
+<https://w3id.org/womo#RatingScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#RatingScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#RespondedFeedback
+<https://w3id.org/womo#RespondedFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#RespondedFeedback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#FeedbackResponseType> .
+<https://w3id.org/womo#RespondedFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Instances of this class enumerates possible types of responded feedback." .
+# 
+# https://w3id.org/womo#Room
+<https://w3id.org/womo#Room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Room> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#WorkspaceType> .
+# 
+# https://w3id.org/womo#SocialInteraction
+<https://w3id.org/womo#SocialInteraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#SocialInteraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#VentilationType
+<https://w3id.org/womo#VentilationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#VentilationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#Worker
+<https://w3id.org/womo#Worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Worker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/womo#Worker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#Member> .
+# 
+# https://w3id.org/womo#WorkerFeature
+<https://w3id.org/womo#WorkerFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#WorkerFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#Workspace
+<https://w3id.org/womo#Workspace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Workspace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/womo#Workspace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<https://w3id.org/womo#Workspace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+# 
+# https://w3id.org/womo#WorkspaceElement
+<https://w3id.org/womo#WorkspaceElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#WorkspaceElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/womo#WorkspaceElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<https://w3id.org/womo#WorkspaceElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+# 
+# https://w3id.org/womo#WorkspaceType
+<https://w3id.org/womo#WorkspaceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#WorkspaceType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/womo#Workstation
+<https://w3id.org/womo#Workstation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/womo#Workstation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/womo#WorkspaceType> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/womo#AcousticQuality
+<https://w3id.org/womo#AcousticQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#AcousticQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/Property> .
+# 
+# https://w3id.org/womo#AirQuality
+<https://w3id.org/womo#AirQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#AirQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/Property> .
+# 
+# https://w3id.org/womo#AirTemperature
+<https://w3id.org/womo#AirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#AirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://w3id.org/womo#AutomaticMVControlOnly
+<https://w3id.org/womo#AutomaticMVControlOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#AutomaticMVControlOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#MechanicalVentilationControlType> .
+# 
+# https://w3id.org/womo#AutomaticNVControlOnly
+<https://w3id.org/womo#AutomaticNVControlOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#AutomaticNVControlOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#NaturalVentilationControlType> .
+# 
+# https://w3id.org/womo#Away
+<https://w3id.org/womo#Away> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Away> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#NotRespondedFeedback> .
+<https://w3id.org/womo#Away> <http://www.w3.org/2000/01/rdf-schema#comment> "Feedback request declined because the worker is not at the workplace." .
+# 
+# https://w3id.org/womo#Break
+<https://w3id.org/womo#Break> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Break> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ActivityCategory> .
+<https://w3id.org/womo#Break> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity that is a break from the worker's job." .
+# 
+# https://w3id.org/womo#BreakCoffee
+<https://w3id.org/womo#BreakCoffee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#BreakCoffee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ActivityType> .
+<https://w3id.org/womo#BreakCoffee> <http://www.w3.org/2000/01/rdf-schema#comment> "Coffee break, usually short." .
+# 
+# https://w3id.org/womo#BreakMeal
+<https://w3id.org/womo#BreakMeal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#BreakMeal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ActivityType> .
+<https://w3id.org/womo#BreakMeal> <http://www.w3.org/2000/01/rdf-schema#comment> "Break involving a meal. (e.g. lunch)" .
+# 
+# https://w3id.org/womo#BreakUnspecified
+<https://w3id.org/womo#BreakUnspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#BreakUnspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ActivityType> .
+<https://w3id.org/womo#BreakUnspecified> <http://www.w3.org/2000/01/rdf-schema#comment> "Unspecified break." .
+# 
+# https://w3id.org/womo#Busy
+<https://w3id.org/womo#Busy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Busy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#NotRespondedFeedback> .
+<https://w3id.org/womo#Busy> <http://www.w3.org/2000/01/rdf-schema#comment> "Feedback request declined because the worker is too busy." .
+# 
+# https://w3id.org/womo#CO2Concentration
+<https://w3id.org/womo#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://w3id.org/womo#Concentration
+<https://w3id.org/womo#Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ConditionType> .
+# 
+# https://w3id.org/womo#Concentration3PointsScale
+<https://w3id.org/womo#Concentration3PointsScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Concentration3PointsScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#RatingScale> .
+<https://w3id.org/womo#Concentration3PointsScale> <https://w3id.org/womo#ratingScaleName> "Concentration - 3 Points Scale" .
+<https://w3id.org/womo#Concentration3PointsScale> <https://w3id.org/womo#ratingScaleOptions> "-1, Distracted; 0, Fine; 1, Focused" .
+<https://w3id.org/womo#Concentration3PointsScale> <https://w3id.org/womo#ratingScalePrompt> "CONCENTRATION - I'm feeling ..." .
+# 
+# https://w3id.org/womo#ConferenceRoom
+<https://w3id.org/womo#ConferenceRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#ConferenceRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#Room> .
+# 
+# https://w3id.org/womo#Cubicle
+<https://w3id.org/womo#Cubicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Cubicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#Office> .
+# 
+# https://w3id.org/womo#DailyStepCount
+<https://w3id.org/womo#DailyStepCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#DailyStepCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#HealthIndicatorType> .
+<https://w3id.org/womo#DailyStepCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Daily step count measured in (step)." .
+# 
+# https://w3id.org/womo#Direct
+<https://w3id.org/womo#Direct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Direct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#RespondedFeedback> .
+<https://w3id.org/womo#Direct> <http://www.w3.org/2000/01/rdf-schema#comment> "Feedback request responded directly." .
+# 
+# https://w3id.org/womo#EventFeedback
+<https://w3id.org/womo#EventFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#EventFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#FeedbackGenerationType> .
+<https://w3id.org/womo#EventFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a feedback request triggered by an event." .
+# 
+# https://w3id.org/womo#Group
+<https://w3id.org/womo#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#SocialInteraction> .
+<https://w3id.org/womo#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "The worker is performing the activity in a larger group. Total of 5 or more workers." .
+# 
+# https://w3id.org/womo#HeartRate
+<https://w3id.org/womo#HeartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#HeartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#HealthIndicatorType> .
+<https://w3id.org/womo#HeartRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Heart rate measured in (bpm)." .
+# 
+# https://w3id.org/womo#HomeOffice
+<https://w3id.org/womo#HomeOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#HomeOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#NotRespondedFeedback> .
+<https://w3id.org/womo#HomeOffice> <http://www.w3.org/2000/01/rdf-schema#comment> "Feedback request declined because the worker is working from home." .
+# 
+# https://w3id.org/womo#Illuminance
+<https://w3id.org/womo#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://w3id.org/womo#IndirectVentilationOnly
+<https://w3id.org/womo#IndirectVentilationOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#IndirectVentilationOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#VentilationType> .
+# 
+# https://w3id.org/womo#Inferred_MeanVal_Hour
+<https://w3id.org/womo#Inferred_MeanVal_Hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Inferred_MeanVal_Hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/Procedure> .
+# 
+# https://w3id.org/womo#Inferred_SingleVal
+<https://w3id.org/womo#Inferred_SingleVal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Inferred_SingleVal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/Procedure> .
+# 
+# https://w3id.org/womo#ManualMVControlOnly
+<https://w3id.org/womo#ManualMVControlOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#ManualMVControlOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#MechanicalVentilationControlType> .
+# 
+# https://w3id.org/womo#ManualNVControlOnly
+<https://w3id.org/womo#ManualNVControlOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#ManualNVControlOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#NaturalVentilationControlType> .
+# 
+# https://w3id.org/womo#MechanicalVentilationOnly
+<https://w3id.org/womo#MechanicalVentilationOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#MechanicalVentilationOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#VentilationType> .
+# 
+# https://w3id.org/womo#MixedMVControl
+<https://w3id.org/womo#MixedMVControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#MixedMVControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#MechanicalVentilationControlType> .
+# 
+# https://w3id.org/womo#MixedNVControl
+<https://w3id.org/womo#MixedNVControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#MixedNVControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#NaturalVentilationControlType> .
+# 
+# https://w3id.org/womo#MixedVentilation
+<https://w3id.org/womo#MixedVentilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#MixedVentilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#VentilationType> .
+# 
+# https://w3id.org/womo#NaturalVentilationOnly
+<https://w3id.org/womo#NaturalVentilationOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#NaturalVentilationOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#VentilationType> .
+# 
+# https://w3id.org/womo#NoiseLevel
+<https://w3id.org/womo#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://w3id.org/womo#Observed_SingleVal
+<https://w3id.org/womo#Observed_SingleVal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Observed_SingleVal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/Procedure> .
+# 
+# https://w3id.org/womo#OccupancyCount
+<https://w3id.org/womo#OccupancyCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#OccupancyCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://w3id.org/womo#OccupancyRatio
+<https://w3id.org/womo#OccupancyRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#OccupancyRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://w3id.org/womo#OpenOffice
+<https://w3id.org/womo#OpenOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#OpenOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#Office> .
+# 
+# https://w3id.org/womo#Pair
+<https://w3id.org/womo#Pair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Pair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#SocialInteraction> .
+<https://w3id.org/womo#Pair> <http://www.w3.org/2000/01/rdf-schema#comment> "The worker is doing the activity together with another colleaugue." .
+# 
+# https://w3id.org/womo#Postponed
+<https://w3id.org/womo#Postponed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Postponed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#RespondedFeedback> .
+<https://w3id.org/womo#Postponed> <http://www.w3.org/2000/01/rdf-schema#comment> "Feedback request responded after being postponed." .
+# 
+# https://w3id.org/womo#PrivateOffice
+<https://w3id.org/womo#PrivateOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#PrivateOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#EnclosedOffice> .
+# 
+# https://w3id.org/womo#Productivity
+<https://w3id.org/womo#Productivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Productivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ConditionType> .
+# 
+# https://w3id.org/womo#Productivity3PointsScale
+<https://w3id.org/womo#Productivity3PointsScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Productivity3PointsScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#RatingScale> .
+# 
+# https://w3id.org/womo#RandomFeedback
+<https://w3id.org/womo#RandomFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#RandomFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#FeedbackGenerationType> .
+<https://w3id.org/womo#RandomFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a feedback request generated at a random time within a daily time frame (e.g. 9:00-11:00 AM)." .
+# 
+# https://w3id.org/womo#RelativeHumidity
+<https://w3id.org/womo#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://w3id.org/womo#ScheduledFeedback
+<https://w3id.org/womo#ScheduledFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#ScheduledFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#FeedbackGenerationType> .
+<https://w3id.org/womo#ScheduledFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a feedback request generated at a scheduled time (e.g. 13:00)." .
+# 
+# https://w3id.org/womo#SharedOffice
+<https://w3id.org/womo#SharedOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#SharedOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#EnclosedOffice> .
+# 
+# https://w3id.org/womo#SmallGroup
+<https://w3id.org/womo#SmallGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#SmallGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#SocialInteraction> .
+<https://w3id.org/womo#SmallGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "The worker is performing the activity in a small group. Total of 3 or 4 workers." .
+# 
+# https://w3id.org/womo#Solo
+<https://w3id.org/womo#Solo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Solo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#SocialInteraction> .
+<https://w3id.org/womo#Solo> <http://www.w3.org/2000/01/rdf-schema#comment> "The worker is doing the activity on his own." .
+# 
+# https://w3id.org/womo#TeamRoom
+<https://w3id.org/womo#TeamRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#TeamRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#EnclosedOffice> .
+# 
+# https://w3id.org/womo#ThermalQuality
+<https://w3id.org/womo#ThermalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#ThermalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/Property> .
+# 
+# https://w3id.org/womo#ThermalQuality3PointsScale
+<https://w3id.org/womo#ThermalQuality3PointsScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#ThermalQuality3PointsScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#RatingScale> .
+<https://w3id.org/womo#ThermalQuality3PointsScale> <https://w3id.org/womo#ratingScaleName> "Thermal quality - 3 Points Scale" .
+<https://w3id.org/womo#ThermalQuality3PointsScale> <https://w3id.org/womo#ratingScaleOptions> "-1, Cooler; 0, No change; 1, Warmer" .
+<https://w3id.org/womo#ThermalQuality3PointsScale> <https://w3id.org/womo#ratingScalePrompt> "THERMAL QUALITY - Would you prefer to be...?" .
+# 
+# https://w3id.org/womo#Timeout
+<https://w3id.org/womo#Timeout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Timeout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#NotRespondedFeedback> .
+<https://w3id.org/womo#Timeout> <http://www.w3.org/2000/01/rdf-schema#comment> "Feedback request canceled after timeout." .
+# 
+# https://w3id.org/womo#Unspecified
+<https://w3id.org/womo#Unspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Unspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#NotRespondedFeedback> .
+<https://w3id.org/womo#Unspecified> <http://www.w3.org/2000/01/rdf-schema#comment> "Feedback request declined for unspecified reasons." .
+# 
+# https://w3id.org/womo#VisualQuality
+<https://w3id.org/womo#VisualQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#VisualQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/Property> .
+# 
+# https://w3id.org/womo#VoluntaryFeedback
+<https://w3id.org/womo#VoluntaryFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#VoluntaryFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#FeedbackGenerationType> .
+<https://w3id.org/womo#VoluntaryFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a feedback provided voluntarily by the worker/occupant at a given time." .
+# 
+# https://w3id.org/womo#Work
+<https://w3id.org/womo#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ActivityCategory> .
+<https://w3id.org/womo#Work> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity that is part of the the worker's job." .
+# 
+# https://w3id.org/womo#WorkCall
+<https://w3id.org/womo#WorkCall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#WorkCall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ActivityType> .
+<https://w3id.org/womo#WorkCall> <http://www.w3.org/2000/01/rdf-schema#comment> "Work call or videocall." .
+# 
+# https://w3id.org/womo#WorkGroup
+<https://w3id.org/womo#WorkGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#WorkGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ActivityType> .
+<https://w3id.org/womo#WorkGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Work activity performed by the worker together with one or more colleagues." .
+# 
+# https://w3id.org/womo#WorkSolo
+<https://w3id.org/womo#WorkSolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#WorkSolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ActivityType> .
+<https://w3id.org/womo#WorkSolo> <http://www.w3.org/2000/01/rdf-schema#comment> "Work activity performed by the worker on his own." .
+# 
+# https://w3id.org/womo#WorkUnspecified
+<https://w3id.org/womo#WorkUnspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/womo#WorkUnspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/womo#ActivityType> .
+<https://w3id.org/womo#WorkUnspecified> <http://www.w3.org/2000/01/rdf-schema#comment> "Unspecified work activity." .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

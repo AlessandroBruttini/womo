@@ -1,0 +1,2456 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "https://w3id.org/bot", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/ns/ssn", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "https://w3id.org/womo", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/sosa" ],
+    "title" : {
+      "undefined" : "The Occupant-centric Workplace Management ontology (WOMO) "
+    },
+    "iri" : "https://w3id.org/womo#",
+    "version" : "1.0",
+    "author" : [ "_:genid2147483670" ],
+    "labels" : {
+      "undefined" : "The Occupant-centric Workplace Management ontology (WOMO) "
+    },
+    "comments" : {
+      "en" : "The Occupant-centric Workplace Management (WOMO) ontology describes knowledge related to office environments and enables the development of a workplace Digital Twin system centred on the occupant experience."
+    },
+    "other" : {
+      "versionIRI" : [ {
+        "identifier" : "versionIRI",
+        "language" : "undefined",
+        "value" : "https://w3id.org/womo#",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      }, {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "CC-BY-40",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483670",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-07-19",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "womo",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/womo#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Occupant-centric Workplace Management ontology (WOMO) ",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "107",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "151",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/womo#NotRespondedFeedback",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NotRespondedFeedback"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#Busy",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Feedback request declined because the worker is too busy."
+      },
+      "labels" : {
+        "IRI-based" : "Busy"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Timeout",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Feedback request canceled after timeout."
+      },
+      "labels" : {
+        "IRI-based" : "Timeout"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Unspecified",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Feedback request declined for unspecified reasons."
+      },
+      "labels" : {
+        "IRI-based" : "Unspecified"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Away",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Feedback request declined because the worker is not at the workplace."
+      },
+      "labels" : {
+        "IRI-based" : "Away"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#HomeOffice",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Feedback request declined because the worker is working from home."
+      },
+      "labels" : {
+        "IRI-based" : "HomeOffice"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Instances of this class enumerates possible types of not responded feedback."
+    },
+    "id" : "10",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://w3id.org/womo#Member",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Member"
+    },
+    "subClasses" : [ "19" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/bot#Space",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Space"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/womo#Worker",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Worker"
+    },
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://w3id.org/womo#Workstation",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Workstation"
+    },
+    "id" : "57",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/womo#RatingScale",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RatingScale"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#Productivity3PointsScale",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "Productivity3PointsScale"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Concentration3PointsScale",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "Concentration3PointsScale"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#ThermalQuality3PointsScale",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "ThermalQuality3PointsScale"
+      }
+    } ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/womo#FeedbackResponseType",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeedbackResponseType"
+    },
+    "subClasses" : [ "1", "10" ],
+    "comment" : {
+      "undefined" : "Instances of this class enumerates possible feedback response types."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Procedure",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Procedure"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#Inferred_MeanVal_Hour",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "Inferred_MeanVal_Hour"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Inferred_SingleVal",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "Inferred_SingleVal"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Observed_SingleVal",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "Observed_SingleVal"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/womo#EnclosedOffice",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnclosedOffice"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#PrivateOffice",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "PrivateOffice"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#TeamRoom",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "TeamRoom"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#SharedOffice",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "SharedOffice"
+      }
+    } ],
+    "id" : "75",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/womo#FeedbackGenerationType",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeedbackGenerationType"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#ScheduledFeedback",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Indicates a feedback request generated at a scheduled time (e.g. 13:00)."
+      },
+      "labels" : {
+        "IRI-based" : "ScheduledFeedback"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#RandomFeedback",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Indicates a feedback request generated at a random time within a daily time frame (e.g. 9:00-11:00 AM)."
+      },
+      "labels" : {
+        "IRI-based" : "RandomFeedback"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#EventFeedback",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Indicates a feedback request triggered by an event."
+      },
+      "labels" : {
+        "IRI-based" : "EventFeedback"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#VoluntaryFeedback",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Indicates a feedback provided voluntarily by the worker/occupant at a given time."
+      },
+      "labels" : {
+        "IRI-based" : "VoluntaryFeedback"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Instances of this class enumerates possible feedback request generation types."
+    },
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/womo#HealthIndicatorType",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HealthIndicatorType"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#HeartRate",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Heart rate measured in (bpm)."
+      },
+      "labels" : {
+        "IRI-based" : "HeartRate"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#DailyStepCount",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Daily step count measured in (step)."
+      },
+      "labels" : {
+        "IRI-based" : "DailyStepCount"
+      }
+    } ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.w3.org/ns/ssn/Property",
+    "baseIri" : "http://www.w3.org/ns/ssn",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#AcousticQuality",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "AcousticQuality"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#AirQuality",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "AirQuality"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#VisualQuality",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "VisualQuality"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#ThermalQuality",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "ThermalQuality"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/womo#ActivityCategory",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActivityCategory"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#Break",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Activity that is a break from the worker's job."
+      },
+      "labels" : {
+        "IRI-based" : "Break"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Work",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Activity that is part of the the worker's job."
+      },
+      "labels" : {
+        "IRI-based" : "Work"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Specifies the category of the activity that the worker is performing."
+    },
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/womo#RespondedFeedback",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RespondedFeedback"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#Direct",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Feedback request responded directly."
+      },
+      "labels" : {
+        "IRI-based" : "Direct"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Postponed",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Feedback request responded after being postponed."
+      },
+      "labels" : {
+        "IRI-based" : "Postponed"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Instances of this class enumerates possible types of responded feedback."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/womo#CommonSpace",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommonSpace"
+    },
+    "id" : "95",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/womo#MechanicalVentilationControlType",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MechanicalVentilationControlType"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#MixedMVControl",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "MixedMVControl"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#AutomaticMVControlOnly",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "AutomaticMVControlOnly"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#ManualMVControlOnly",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "ManualMVControlOnly"
+      }
+    } ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/womo#WorkerFeature",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkerFeature"
+    },
+    "subClasses" : [ "44", "79", "110" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/womo#ActivityType",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActivityType"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#WorkSolo",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Work activity performed by the worker on his own."
+      },
+      "labels" : {
+        "IRI-based" : "WorkSolo"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#BreakCoffee",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Coffee break, usually short."
+      },
+      "labels" : {
+        "IRI-based" : "BreakCoffee"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#WorkGroup",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Work activity performed by the worker together with one or more colleagues."
+      },
+      "labels" : {
+        "IRI-based" : "WorkGroup"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#BreakUnspecified",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Unspecified break."
+      },
+      "labels" : {
+        "IRI-based" : "BreakUnspecified"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#WorkUnspecified",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Unspecified work activity."
+      },
+      "labels" : {
+        "IRI-based" : "WorkUnspecified"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#WorkCall",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Work call or videocall."
+      },
+      "labels" : {
+        "IRI-based" : "WorkCall"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#BreakMeal",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "Break involving a meal. (e.g. lunch)"
+      },
+      "labels" : {
+        "IRI-based" : "BreakMeal"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Specifies the type of activity that the worker is performing."
+    },
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/womo#WorkspaceType",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkspaceType"
+    },
+    "subClasses" : [ "57", "95", "93" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/womo#Department",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Department"
+    },
+    "id" : "102",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/womo#Feedback",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Feedback"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/womo#SocialInteraction",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialInteraction"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#Group",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "The worker is performing the activity in a larger group. Total of 5 or more workers."
+      },
+      "labels" : {
+        "IRI-based" : "Group"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Solo",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "The worker is doing the activity on his own."
+      },
+      "labels" : {
+        "IRI-based" : "Solo"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#SmallGroup",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "The worker is performing the activity in a small group. Total of 3 or 4 workers."
+      },
+      "labels" : {
+        "IRI-based" : "SmallGroup"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Pair",
+      "baseIri" : "https://w3id.org/womo",
+      "comment" : {
+        "undefined" : "The worker is doing the activity together with another colleaugue."
+      },
+      "labels" : {
+        "IRI-based" : "Pair"
+      }
+    } ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/womo#Preference",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Preference"
+    },
+    "id" : "110",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "https://w3id.org/womo#Activity",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "comment" : {
+      "undefined" : "Thing that the worker is doing."
+    },
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/womo#Organization",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "102" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/womo#VentilationType",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VentilationType"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#MixedVentilation",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "MixedVentilation"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#IndirectVentilationOnly",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "IndirectVentilationOnly"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#NaturalVentilationOnly",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "NaturalVentilationOnly"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#MechanicalVentilationOnly",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "MechanicalVentilationOnly"
+      }
+    } ],
+    "id" : "121"
+  }, {
+    "iri" : "https://w3id.org/womo#Office",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Office"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#Cubicle",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "Cubicle"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#OpenOffice",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "OpenOffice"
+      }
+    } ],
+    "subClasses" : [ "75" ],
+    "id" : "76",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/ObservableProperty",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObservableProperty"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#RelativeHumidity",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "RelativeHumidity"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#NoiseLevel",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "NoiseLevel"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#OccupancyRatio",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "OccupancyRatio"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Illuminance",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "Illuminance"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#AirTemperature",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "AirTemperature"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#CO2Concentration",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "CO2Concentration"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#OccupancyCount",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "OccupancyCount"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://w3id.org/womo#Condition",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "id" : "44",
+    "superClasses" : [ "105" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "28", "105" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/womo#Workspace",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Workspace"
+    },
+    "id" : "8",
+    "superClasses" : [ "15", "87" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "28", "105" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://w3id.org/womo#ConditionType",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConditionType"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#Productivity",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "Productivity"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#Concentration",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "Concentration"
+      }
+    } ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "147",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/womo#NaturalVentilationControlType",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NaturalVentilationControlType"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#AutomaticNVControlOnly",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "AutomaticNVControlOnly"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#MixedNVControl",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "MixedNVControl"
+      }
+    }, {
+      "iri" : "https://w3id.org/womo#ManualNVControlOnly",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "ManualNVControlOnly"
+      }
+    } ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/womo#Room",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Room"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/womo#ConferenceRoom",
+      "baseIri" : "https://w3id.org/womo",
+      "labels" : {
+        "IRI-based" : "ConferenceRoom"
+      }
+    } ],
+    "subClasses" : [ "76" ],
+    "id" : "93",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://schema.org/Person",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "44", "110" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://w3id.org/womo#WorkspaceElement",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkspaceElement"
+    },
+    "id" : "82",
+    "superClasses" : [ "83", "87" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "44", "110" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "150"
+  }, {
+    "instances" : 0,
+    "union" : [ "44", "110" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeatureOfInterest"
+    },
+    "subClasses" : [ "82", "8" ],
+    "attributes" : [ "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://w3id.org/womo#HealthIndicator",
+    "baseIri" : "https://w3id.org/womo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HealthIndicator"
+    },
+    "id" : "79",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Element",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Element"
+    },
+    "subClasses" : [ "82" ],
+    "attributes" : [ "external" ],
+    "id" : "83"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/bot#hasSubElement",
+    "baseIri" : "https://w3id.org/bot",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasSubElement"
+    },
+    "domain" : "4",
+    "subproperty" : [ "5" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/womo#isProvidedAt",
+    "inverse" : "9",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isProvidedAt"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/womo#isFeedbackGenerationTypeOf",
+    "inverse" : "13",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isFeedbackGenerationTypeOf"
+    },
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "range" : "15",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/womo#workspaceLocalID",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "workspaceLocalID"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/womo#isWorkspaceTypeOf",
+    "inverse" : "23",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isWorkspaceTypeOf"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/womo#hasActivityType",
+    "inverse" : "30",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasActivityType"
+    },
+    "domain" : "28",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/womo#hasWorkspace",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasWorkspace"
+    },
+    "superproperty" : [ "35" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/womo#reports",
+    "inverse" : "38",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "reports"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/womo#isReportedBy",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isReportedBy"
+    },
+    "domain" : "39",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/womo#performs",
+    "inverse" : "41",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "performs"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/womo#isConditionTypeOf",
+    "inverse" : "45",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "isConditionTypeOf"
+    },
+    "domain" : "43",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/womo#organizationLogo",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "organizationLogo"
+    },
+    "domain" : "47",
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/womo#isProvidedBy",
+    "inverse" : "50",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isProvidedBy"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/womo#feedbackStartTime",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "feedbackStartTime"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Time of feedback response start."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/womo#hasActivityCategory",
+    "inverse" : "55",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasActivityCategory"
+    },
+    "domain" : "28",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/womo#supportsActivityType",
+    "inverse" : "65",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "supportsActivityType"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/womo#ratingScaleOptions",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "ratingScaleOptions"
+    },
+    "domain" : "68",
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/womo#isFeedbackResponseTypeOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isFeedbackResponseTypeOf"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/womo#isSocialInteractionOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isSocialInteractionOf"
+    },
+    "domain" : "74",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/womo#isActivityTypeSupportedBy",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isActivityTypeSupportedBy"
+    },
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/womo#isHealthIndicatorTypeOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "isHealthIndicatorTypeOf"
+    },
+    "domain" : "78",
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/womo#workspaceAreaPerOccupant",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "workspaceAreaPerOccupant"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "range" : "83",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/womo#isNaturalVentilationControlTypeOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isNaturalVentilationControlTypeOf"
+    },
+    "domain" : "85",
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "range" : "87",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/womo#feedbackRequestTime",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "feedbackRequestTime"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Time of feedback request."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "range" : "87",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "93",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://w3id.org/womo#workspaceNetFloorArea",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "workspaceNetFloorArea"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://w3id.org/womo#isRelatedTo",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "isRelatedTo"
+    },
+    "domain" : "88",
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "range" : "76",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "22",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "22",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "47",
+    "domain" : "102",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "22",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "105",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/womo#rating",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "rating"
+    },
+    "domain" : "107",
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "105",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "105",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/womo#hasPart",
+    "inverse" : "113",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "47",
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/womo#workspaceVolumePerOccupant",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "workspaceVolumePerOccupant"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://w3id.org/womo#workspaceNetVolume",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "workspaceNetVolume"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://w3id.org/womo#hasActivity",
+    "inverse" : "117",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasActivity"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://w3id.org/womo#hasMember",
+    "inverse" : "119",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasMember"
+    },
+    "domain" : "47",
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://w3id.org/womo#isVentilationTypeOf",
+    "inverse" : "122",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isVentilationTypeOf"
+    },
+    "domain" : "121",
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://w3id.org/womo#hasNaturalVentilationControlType",
+    "inverse" : "84",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "hasNaturalVentilationControlType"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://w3id.org/womo#responseRatio",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "responseRatio"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Ratio of answered questions (%)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://w3id.org/womo#isWorkerFeatureOf",
+    "inverse" : "126",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isWorkerFeatureOf"
+    },
+    "domain" : "105",
+    "attributes" : [ "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://w3id.org/womo#responseDuration",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "responseDuration"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Elapsed time between feedback response start and conclusion (sec)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://w3id.org/womo#ownsWorkspace",
+    "inverse" : "129",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "ownsWorkspace"
+    },
+    "domain" : "47",
+    "attributes" : [ "object" ],
+    "id" : "128"
+  }, {
+    "iri" : "https://w3id.org/womo#isPartOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "47",
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://w3id.org/womo#ratingScalePrompt",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "ratingScalePrompt"
+    },
+    "domain" : "68",
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://w3id.org/womo#hasSocialInteraction",
+    "inverse" : "73",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasSocialInteraction"
+    },
+    "domain" : "28",
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://w3id.org/womo#fromIFCDatatypeProperties",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "fromIFCDatatypeProperties"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://w3id.org/bot#hasSpace",
+    "baseIri" : "https://w3id.org/bot",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasSpace"
+    },
+    "domain" : "4",
+    "subproperty" : [ "34" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/womo#isWorkspaceOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "isWorkspaceOf"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://w3id.org/womo#hasAllocatedWorkspace",
+    "inverse" : "134",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasAllocatedWorkspace"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://w3id.org/womo#hasFeedbackResponseType",
+    "inverse" : "71",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasFeedbackResponseType"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://w3id.org/womo#isMechanicalVentilationControlTypeOf",
+    "inverse" : "137",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isMechanicalVentilationControlTypeOf"
+    },
+    "domain" : "97",
+    "attributes" : [ "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://w3id.org/womo#isPreferenceFor",
+    "inverse" : "139",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "isPreferenceFor"
+    },
+    "domain" : "110",
+    "attributes" : [ "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://w3id.org/bot#containsElement",
+    "baseIri" : "https://w3id.org/bot",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "containsElement"
+    },
+    "domain" : "4",
+    "subproperty" : [ "141" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://w3id.org/womo#isPerformedBy",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isPerformedBy"
+    },
+    "domain" : "28",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/womo#hasConditionType",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasConditionType"
+    },
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/womo#hasHealthIndicatorType",
+    "inverse" : "77",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasHealthIndicatorType"
+    },
+    "domain" : "79",
+    "attributes" : [ "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "https://w3id.org/womo#workspaceOccupancyNumber",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "workspaceOccupancyNumber"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://w3id.org/womo#organizationName",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "organizationName"
+    },
+    "domain" : "47",
+    "attributes" : [ "datatype" ],
+    "id" : "145"
+  }, {
+    "iri" : "https://w3id.org/womo#isMemberOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "isMemberOf"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://w3id.org/womo#hasWorkerFeature",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "hasWorkerFeature"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://w3id.org/womo#hasMechanicalVentilationControlType",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "hasMechanicalVentilationControlType"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "137"
+  }, {
+    "iri" : "https://w3id.org/womo#feedbackTime",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "147",
+    "label" : {
+      "IRI-based" : "feedbackTime"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Time of feedback response conclusion."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "https://w3id.org/womo#provides",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "provides"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/womo#hasSubWorkspaceElement",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasSubWorkspaceElement"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "82",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/womo#isActivityCategoryOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isActivityCategoryOf"
+    },
+    "domain" : "54",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/womo#containsWorkspaceElement",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "containsWorkspaceElement"
+    },
+    "superproperty" : [ "140" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://w3id.org/womo#isAllocatedTo",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isAllocatedTo"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://w3id.org/womo#workspaceIsShared",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "workspaceIsShared"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://w3id.org/womo#hasRatingScale",
+    "inverse" : "154",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasRatingScale"
+    },
+    "domain" : "150",
+    "attributes" : [ "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://w3id.org/womo#isActivityTypeOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isActivityTypeOf"
+    },
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/womo#value",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "value"
+    },
+    "domain" : "79",
+    "attributes" : [ "datatype" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://w3id.org/womo#hasVentilationType",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "hasVentilationType"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://w3id.org/womo#isPreferredAs",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "isPreferredAs"
+    },
+    "domain" : "88",
+    "attributes" : [ "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://w3id.org/womo#workspacePubliclyAccessible",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "workspacePubliclyAccessible"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://w3id.org/womo#ratingScaleName",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "ratingScaleName"
+    },
+    "domain" : "68",
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://w3id.org/womo#isPerformedAt",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isPerformedAt"
+    },
+    "domain" : "28",
+    "attributes" : [ "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://w3id.org/womo#isRatingScaleOf",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "isRatingScaleOf"
+    },
+    "domain" : "68",
+    "attributes" : [ "object" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://w3id.org/womo#hasFeedback",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasFeedback"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/womo#hasWorkspaceType",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasWorkspaceType"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/womo#hasFeedbackGenerationType",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasFeedbackGenerationType"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/womo#workspaceHeight",
+    "baseIri" : "https://w3id.org/womo",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "workspaceHeight"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "158"
+  } ]
+}
